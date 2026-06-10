@@ -255,5 +255,19 @@
   <div class="sticky-bar-text"><strong>🎁 Betsat Bonus</strong>Hemen al, bahis yap</div>
   <a href="https://betsat1583.com/hub/registration/" target="_blank" rel="noopener" class="sticky-bar-btn">Giriş Yap →</a>
 </div>
+
+<script>
+  function openMenu() {
+    document.getElementById('slide-menu').style.left = '0';
+    document.getElementById('menu-overlay').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    document.getElementById('slide-menu').style.left = '-300px';
+    document.getElementById('menu-overlay').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeMenu(); });
+</script>
 </body>
 </html>
