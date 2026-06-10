@@ -101,8 +101,40 @@
   </script>
 </head>
 <body>
+<!-- Slide Menu Overlay -->
+<div id="menu-overlay" onclick="closeMenu()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index:998; backdrop-filter:blur(4px);"></div>
+
+<!-- Slide Menu Panel -->
+<div id="slide-menu" style="position:fixed; top:0; left:-300px; width:280px; height:100vh; background:linear-gradient(180deg,#100D24,#080612); border-right:1px solid rgba(124,58,237,0.3); z-index:999; transition:left 0.3s ease; overflow-y:auto;">
+  <div style="padding:20px 24px; border-bottom:1px solid rgba(124,58,237,0.2); display:flex; align-items:center; justify-content:space-between;">
+    <a href="/" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+      <div style="width:34px; height:34px; background:linear-gradient(135deg,#FACC15,#EAB308); border-radius:8px; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:13px; color:#3B0764;">BS</div>
+      <span style="font-size:18px; font-weight:800; color:#F5F3FF; letter-spacing:-0.5px;">Bet<span style="color:#FACC15;">sat</span></span>
+    </a>
+    <button onclick="closeMenu()" style="background:rgba(124,58,237,0.2); border:1px solid rgba(124,58,237,0.3); border-radius:8px; width:32px; height:32px; color:#A78BFA; font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center;">✕</button>
+  </div>
+  <nav style="padding:16px 0;">
+    <a href="/" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#F5F3FF; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(124,58,237,0.15)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">🏠</span> Ana Sayfa</a>
+    <a href="/betsat-giris/" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#F5F3FF; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(124,58,237,0.15)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">🔑</span> Giriş Rehberi</a>
+    <a href="/betsat-bonus/" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#F5F3FF; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(124,58,237,0.15)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">🎁</span> Bonus Rehberi</a>
+    <a href="/betsat-canli-casino/" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#F5F3FF; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(124,58,237,0.15)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">🎰</span> Canlı Casino</a>
+    <a href="/betsat-slot/" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#F5F3FF; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(124,58,237,0.15)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">🎮</span> Slot Oyunları</a>
+    <a href="/betsat-uygulama/" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#F5F3FF; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(124,58,237,0.15)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">📱</span> Mobil Uygulama</a>
+    <div style="height:1px; background:linear-gradient(90deg,transparent,rgba(124,58,237,0.4),transparent); margin:12px 24px;"></div>
+    <a href="https://t.me/betsattr" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#60CAEE; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(34,158,217,0.1)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">📲</span> Telegram — @betsattr</a>
+    <a href="https://betsat1583.com/hub/registration/" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#FACC15; text-decoration:none; font-size:14px; font-weight:700;" onmouseover="this.style.background='rgba(250,204,21,0.1)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">🔗</span> Güncel Adres — betsat1583.com</a>
+  </nav>
+  <div style="padding:20px 24px; border-top:1px solid rgba(124,58,237,0.2);">
+    <a href="https://betsat1583.com/hub/registration/" target="_blank" rel="noopener" style="display:block; background:linear-gradient(135deg,#FACC15,#EAB308); color:#3B0764; font-weight:800; font-size:14px; padding:14px; border-radius:12px; text-decoration:none; text-align:center; box-shadow:0 4px 16px rgba(250,204,21,0.25);">🎯 Betsat'a Giriş Yap</a>
+    <p style="margin-top:12px; font-size:11px; color:#6D5FA6; text-align:center;">OGL/2024/815/0653 — Curaçao GCB</p>
+  </div>
+</div>
+
 <header>
-  <a href="/" class="logo"><div class="logo-badge">BS</div><span class="logo-text">Bet<span>sat</span></span></a>
+  <div style="display:flex; align-items:center; gap:12px;">
+    <button onclick="openMenu()" style="background:rgba(124,58,237,0.15); border:1px solid rgba(124,58,237,0.3); border-radius:8px; width:36px; height:36px; color:#A78BFA; font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0;">☰</button>
+    <a href="/" class="logo"><div class="logo-badge">BS</div><span class="logo-text">Bet<span>sat</span></span></a>
+  </div>
   <a href="https://betsat1583.com/hub/registration/" target="_blank" rel="noopener" class="header-btn">Giriş Yap →</a>
 </header>
 
@@ -306,5 +338,19 @@
   <a href="https://betsat1583.com/hub/registration/" target="_blank" rel="noopener" class="sticky-bar-btn">Oyna →</a>
 </div>
 <script>document.querySelectorAll(".faq-q").forEach(q=>{q.addEventListener("click",()=>{const i=q.parentElement,o=i.classList.contains("open");document.querySelectorAll(".faq-item").forEach(x=>x.classList.remove("open"));if(!o)i.classList.add("open");});});</script>
+
+<script>
+  function openMenu() {
+    document.getElementById('slide-menu').style.left = '0';
+    document.getElementById('menu-overlay').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    document.getElementById('slide-menu').style.left = '-300px';
+    document.getElementById('menu-overlay').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeMenu(); });
+</script>
 </body>
 </html>
