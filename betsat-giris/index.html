@@ -231,5 +231,19 @@
   <a href="https://betsat1583.com/hub/registration/" target="_blank" rel="noopener" class="sticky-bar-btn">Giriş Yap →</a>
 </div>
 <script>document.querySelectorAll(".faq-q").forEach(q=>{q.addEventListener("click",()=>{const i=q.parentElement,o=i.classList.contains("open");document.querySelectorAll(".faq-item").forEach(x=>x.classList.remove("open"));if(!o)i.classList.add("open");});});</script>
+
+<script>
+  function openMenu() {
+    document.getElementById('slide-menu').style.left = '0';
+    document.getElementById('menu-overlay').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    document.getElementById('slide-menu').style.left = '-300px';
+    document.getElementById('menu-overlay').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeMenu(); });
+</script>
 </body>
 </html>
