@@ -8,76 +8,355 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://bahiskazani.com/betsat-bonus/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --bs-purple:#6B21A8; --bs-purple-dark:#4C1D95; --bs-yellow:#FACC15; --bs-yellow-dark:#EAB308; --bg:#0F0A1E; --bg2:#1A1035; --bg3:#241848; --text:#F1F0FF; --text2:#C4B5FD; --border:rgba(107,33,168,0.3); }
-    body { font-family:"Inter",sans-serif; background:var(--bg); color:var(--text); min-height:100vh; line-height:1.6; padding-bottom:72px; }
-    header { background:var(--bg2); border-bottom:1px solid var(--border); padding:14px 20px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:100; }
-    .logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
-    .logo-badge { width:36px; height:36px; background:var(--bs-yellow); border-radius:8px; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; color:var(--bs-purple-dark); }
-    .logo-text { font-size:20px; font-weight:800; color:var(--text); letter-spacing:-0.5px; }
-    .logo-text span { color:var(--bs-yellow); }
-    .header-btn { background:var(--bs-yellow); color:var(--bs-purple-dark); font-weight:700; font-size:14px; padding:10px 20px; border-radius:8px; text-decoration:none; }
-    .hero { padding:50px 20px 40px; text-align:center; max-width:700px; margin:0 auto; }
-    .breadcrumb { font-size:13px; color:var(--text2); margin-bottom:16px; }
-    .breadcrumb a { color:var(--bs-yellow); text-decoration:none; }
-    .hero h1 { font-size:clamp(26px,5vw,42px); font-weight:800; line-height:1.15; letter-spacing:-1px; margin-bottom:14px; }
-    .hero h1 span { color:var(--bs-yellow); }
-    .hero p { font-size:15px; color:var(--text2); margin-bottom:28px; max-width:520px; margin-left:auto; margin-right:auto; }
-    .btn-primary { display:inline-block; background:var(--bs-yellow); color:var(--bs-purple-dark); font-weight:800; font-size:16px; padding:16px 40px; border-radius:10px; text-decoration:none; width:100%; max-width:360px; text-align:center; transition:background 0.2s; }
-    .btn-primary:hover { background:var(--bs-yellow-dark); }
-    .section { max-width:700px; margin:0 auto 48px; padding:0 20px; }
-    .section-title { font-size:22px; font-weight:700; margin-bottom:16px; }
-    .section-title span { color:var(--bs-yellow); }
-    .section p { color:var(--text2); font-size:15px; margin-bottom:14px; }
-    .bonus-cards { display:flex; flex-direction:column; gap:16px; margin-top:20px; }
-    .bonus-card { background:var(--bg2); border:1px solid var(--border); border-radius:14px; padding:22px; display:flex; gap:18px; align-items:flex-start; }
-    .bonus-icon { font-size:32px; flex-shrink:0; }
-    .bonus-info h3 { font-size:16px; font-weight:700; color:var(--text); margin-bottom:6px; }
-    .bonus-info p { font-size:13px; color:var(--text2); margin:0; line-height:1.5; }
-    .bonus-badge { display:inline-block; background:rgba(250,204,21,0.15); color:var(--bs-yellow); border:1px solid rgba(250,204,21,0.3); border-radius:6px; font-size:11px; font-weight:700; padding:2px 8px; margin-top:8px; }
-    .bonus-table { width:100%; border-collapse:collapse; margin-top:20px; font-size:14px; }
-    .bonus-table th { background:var(--bs-purple); color:var(--bs-yellow); padding:12px 16px; text-align:left; font-weight:700; }
-    .bonus-table td { padding:12px 16px; border-bottom:1px solid var(--border); color:var(--text2); }
-    .bonus-table tr:nth-child(even) td { background:var(--bg2); }
-    .highlight-box { background:linear-gradient(135deg,rgba(107,33,168,0.2),rgba(76,29,149,0.2)); border:1px solid var(--bs-purple); border-radius:12px; padding:20px; margin:20px 0; }
-    .highlight-box p { margin:0; font-size:14px; }
-    .section-cta { display:flex; align-items:center; justify-content:space-between; background:rgba(107,33,168,0.15); border:1px solid var(--border); border-radius:10px; padding:14px 18px; margin-top:24px; gap:12px; }
-    .section-cta span { font-size:13px; color:var(--text2); }
-    .section-cta a { background:var(--bs-yellow); color:var(--bs-purple-dark); font-weight:700; font-size:13px; padding:8px 16px; border-radius:7px; text-decoration:none; white-space:nowrap; }
-    .internal-links { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:32px; }
-    @media(max-width:480px){ .internal-links{grid-template-columns:1fr;} .bonus-card{flex-direction:column;gap:12px;} }
-    .ilink { background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:16px; text-decoration:none; display:flex; align-items:center; gap:12px; transition:border-color 0.2s; }
-    .ilink:hover { border-color:var(--bs-yellow); }
-    .ilink-icon { font-size:22px; }
-    .ilink-text h4 { font-size:13px; font-weight:700; color:var(--text); margin-bottom:2px; }
-    .ilink-text p { font-size:12px; color:var(--text2); margin:0; }
-    .sticky-bar { position:fixed; bottom:0; left:0; right:0; z-index:200; background:linear-gradient(90deg,var(--bs-purple-dark),var(--bs-purple)); border-top:2px solid var(--bs-yellow); padding:12px 20px; display:flex; align-items:center; justify-content:space-between; gap:12px; }
-    .sticky-bar-text { font-size:13px; color:var(--text2); flex:1; }
-    .sticky-bar-text strong { color:var(--text); display:block; font-size:14px; }
-    .sticky-bar-btn { background:var(--bs-yellow); color:var(--bs-purple-dark); font-weight:800; font-size:14px; padding:10px 20px; border-radius:8px; text-decoration:none; white-space:nowrap; }
-    footer { background:var(--bg2); border-top:1px solid var(--border); padding:24px 20px; text-align:center; }
-    footer p { font-size:12px; color:var(--text2); line-height:1.8; }
-    footer a { color:var(--bs-yellow); text-decoration:none; }
-  </style>
-  <!-- OG Tags -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <meta property="og:title" content="Betsat Bonus 2026 | Hoş Geldin, Kayıp ve Yatırım Bonusları">
   <meta property="og:description" content="Betsat bonus rehberi 2026. Hoş geldin bonusu, kayıp bonusu, freespin ve tüm kampanyalar.">
   <meta property="og:url" content="https://bahiskazani.com/betsat-bonus/">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Bahis Kazanı">
-  <meta name="article:modified_time" content="2026-06-12">
-  <!-- BreadcrumbList Schema -->
+  <meta name="article:modified_time" content="2026-06-16">
+
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ana Sayfa","item":"https://bahiskazani.com/"},{"@type":"ListItem","position":2,"name":"Betsat Bonus Rehberi","item":"https://bahiskazani.com/betsat-bonus/"}]}
   </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Betsat hoş geldin bonusu nasıl alınır?","acceptedAnswer":{"@type":"Answer","text":"Betsat'a ilk kez üye olduktan sonra ilk para yatırma işleminizde hoş geldin bonusu otomatik olarak aktive olur. Güncel detaylar için Betsat promosyonlar sayfasını inceleyin."}},{"@type":"Question","name":"Betsat kayıp bonusu nedir?","acceptedAnswer":{"@type":"Answer","text":"Betsat kayıp bonusu, belirli bir dönemdeki kayıplarınızın belirli bir oranının geri ödenmesidir. Genellikle haftalık periyotlarla hesaplanır."}},{"@type":"Question","name":"Betsat bonus çevrim şartı nedir?","acceptedAnswer":{"@type":"Answer","text":"Çevrim şartı, bonusu çekmeden önce yapmanız gereken bahis miktarıdır. Bonus miktarı ile çevrim katsayısının çarpımı kadar bahis yapmanız gerekir."}},{"@type":"Question","name":"Betsat promosyon kodu nerede kullanılır?","acceptedAnswer":{"@type":"Answer","text":"Betsat promosyon kodu üyelik sırasında kayıt formunda veya para yatırma ekranında ilgili alana girilir."}}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebPage","name":"Betsat Bonus Rehberi 2026","url":"https://bahiskazani.com/betsat-bonus/","description":"Hoş geldin bonusu, kayıp bonusu, yatırım bonusu, freespin ve tüm Betsat kampanyaları.","inLanguage":"tr","dateModified":"2026-06-16"}
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --purple: #7C3AED;
+      --purple-dark: #5B21B6;
+      --purple-deep: #3B0764;
+      --yellow: #FACC15;
+      --yellow-dark: #EAB308;
+      --yellow-glow: rgba(250,204,21,0.25);
+      --bg: #080612;
+      --bg2: #100D24;
+      --bg3: #18143A;
+      --text: #F5F3FF;
+      --text2: #A78BFA;
+      --text3: #6D5FA6;
+      --border: rgba(124,58,237,0.2);
+      --border-bright: rgba(124,58,237,0.5);
+      --glow: rgba(124,58,237,0.15);
+      --green: #22C55E;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Inter", sans-serif;
+      background: var(--bg); color: var(--text);
+      min-height: 100vh; line-height: 1.6;
+      padding-bottom: 80px; overflow-x: hidden;
+    }
+    body::before {
+      content: ""; position: fixed; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(124,58,237,0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 30% at 80% 80%, rgba(250,204,21,0.04) 0%, transparent 60%);
+      pointer-events: none; z-index: 0;
+    }
+    * { position: relative; z-index: 1; }
+
+    /* ─── HEADER ─── */
+    header {
+      background: rgba(8,6,18,0.88); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border); padding: 0 24px; height: 60px;
+      display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-badge {
+      width: 34px; height: 34px;
+      background: linear-gradient(135deg, var(--yellow), var(--yellow-dark));
+      border-radius: 8px; display: flex; align-items: center; justify-content: center;
+      font-weight: 900; font-size: 13px; color: var(--purple-deep);
+      box-shadow: 0 0 12px var(--yellow-glow);
+    }
+    .logo-text { font-size: 18px; font-weight: 800; color: var(--text); letter-spacing: -0.5px; }
+    .logo-text span { color: var(--yellow); }
+    .header-btn {
+      background: linear-gradient(135deg, var(--yellow), var(--yellow-dark));
+      color: var(--purple-deep); font-weight: 800; font-size: 13px;
+      padding: 9px 20px; border-radius: 8px; text-decoration: none;
+      transition: box-shadow 0.2s, transform 0.15s;
+    }
+    .header-btn:hover { box-shadow: 0 0 20px var(--yellow-glow); transform: translateY(-1px); }
+
+    /* ─── SAFETY BANNER ─── */
+    .safety-banner {
+      background: linear-gradient(90deg, #1a0a2e, #2d1054, #1a0a2e);
+      border-bottom: 1px solid rgba(250,204,21,0.3);
+      padding: 10px 20px; text-align: center;
+      position: sticky; top: 60px; z-index: 99;
+    }
+    .safety-banner p { margin: 0; font-size: 12px; color: #e9d5ff; line-height: 1.5; }
+
+    /* ─── HERO ─── */
+    .hero {
+      padding: 56px 24px 44px; text-align: center;
+      max-width: 720px; margin: 0 auto;
+    }
+    .breadcrumb {
+      font-size: 12px; color: var(--text3); margin-bottom: 16px;
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+    }
+    .breadcrumb a { color: var(--text2); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--yellow); }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(124,58,237,0.12); border: 1px solid var(--border-bright);
+      border-radius: 100px; padding: 5px 16px;
+      font-size: 11px; color: var(--text2); font-weight: 600;
+      margin-bottom: 22px; letter-spacing: 0.5px; text-transform: uppercase;
+    }
+    .live-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--green); box-shadow: 0 0 6px var(--green);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
+
+    .hero h1 {
+      font-size: clamp(28px, 6vw, 48px); font-weight: 900;
+      line-height: 1.1; letter-spacing: -1.5px; margin-bottom: 16px;
+    }
+    .hero h1 em {
+      font-style: normal;
+      background: linear-gradient(90deg, var(--yellow), #FDE68A, var(--yellow));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .hero-desc {
+      font-size: 15px; color: var(--text2);
+      max-width: 500px; margin: 0 auto 28px; line-height: 1.65;
+    }
+
+    /* ─── STAT ROW ─── */
+    .stat-row {
+      display: flex; justify-content: center; gap: 16px;
+      flex-wrap: wrap; margin-bottom: 28px;
+    }
+    .stat-chip {
+      display: flex; align-items: center; gap: 7px;
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 100px; padding: 7px 14px;
+      font-size: 12px; font-weight: 600; color: var(--text2);
+    }
+    .stat-chip .num { color: var(--yellow); font-weight: 800; }
+
+    .btn-primary {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      background: linear-gradient(135deg, var(--yellow), var(--yellow-dark));
+      color: var(--purple-deep); font-weight: 800; font-size: 15px;
+      padding: 16px 40px; border-radius: 12px; text-decoration: none;
+      width: 100%; max-width: 380px;
+      box-shadow: 0 4px 24px rgba(250,204,21,0.2);
+      transition: box-shadow 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { box-shadow: 0 6px 32px rgba(250,204,21,0.35); transform: translateY(-2px); }
+
+    /* ─── DIVIDER ─── */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+      max-width: 720px; margin: 0 auto 52px;
+    }
+
+    /* ─── SECTIONS ─── */
+    .section { max-width: 720px; margin: 0 auto 52px; padding: 0 24px; }
+
+    .section-eyebrow {
+      font-size: 10px; font-weight: 700; color: var(--purple);
+      letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px;
+    }
+    .section-title {
+      font-size: 22px; font-weight: 800; color: var(--text);
+      letter-spacing: -0.5px; margin-bottom: 12px;
+    }
+    .section-title em { font-style: normal; color: var(--yellow); }
+    .section-body { color: var(--text2); font-size: 15px; margin-bottom: 14px; line-height: 1.65; }
+
+    /* ─── BONUS CARDS ─── */
+    .bonus-list { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; }
+
+    .bonus-card {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 14px; padding: 22px;
+      display: flex; gap: 18px; align-items: flex-start;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+    }
+    .bonus-card:hover {
+      border-color: var(--border-bright);
+      box-shadow: 0 0 20px var(--glow);
+      transform: translateY(-1px);
+    }
+
+    .bonus-icon { font-size: 32px; flex-shrink: 0; width: 52px; height: 52px; background: var(--bg3); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+    .bonus-name { font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 5px; }
+    .bonus-desc { font-size: 13px; color: var(--text2); margin: 0; line-height: 1.55; }
+
+    .bonus-badge {
+      display: inline-block; margin-top: 8px;
+      background: rgba(250,204,21,0.1); color: var(--yellow);
+      border: 1px solid rgba(250,204,21,0.25);
+      border-radius: 5px; font-size: 10px; font-weight: 700; padding: 2px 8px;
+    }
+    .bonus-badge.new { background: rgba(34,197,94,0.1); color: #4ADE80; border-color: rgba(34,197,94,0.25); }
+
+    /* ─── TABLE ─── */
+    .steps-table {
+      width: 100%; border-collapse: collapse; margin-top: 20px;
+      font-size: 14px; border-radius: 12px; overflow: hidden;
+    }
+    .steps-table th {
+      background: linear-gradient(135deg, var(--purple-dark), var(--purple));
+      color: var(--yellow); padding: 12px 16px;
+      text-align: left; font-weight: 700; font-size: 12px;
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .steps-table td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: var(--text2); font-size: 13px; }
+    .steps-table tr:last-child td { border-bottom: none; }
+    .steps-table tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+    .steps-table tr:hover td { background: var(--bg3); }
+
+    /* ─── STEPS ─── */
+    .steps { display: flex; flex-direction: column; gap: 0; margin-top: 20px; }
+    .step {
+      display: flex; gap: 18px; align-items: flex-start;
+      padding: 20px 0; border-bottom: 1px solid var(--border);
+    }
+    .step:last-child { border-bottom: none; }
+    .step-num {
+      min-width: 36px; height: 36px;
+      background: linear-gradient(135deg, var(--purple), var(--purple-dark));
+      border-radius: 10px; display: flex; align-items: center; justify-content: center;
+      font-weight: 900; font-size: 14px; color: var(--yellow);
+      box-shadow: 0 0 14px rgba(124,58,237,0.35); flex-shrink: 0;
+    }
+    .step-num.check {
+      background: linear-gradient(135deg, rgba(34,197,94,0.2), rgba(34,197,94,0.1));
+      border: 1px solid rgba(34,197,94,0.3); color: var(--green); font-size: 16px;
+    }
+    .step-content h3 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+    .step-content p { font-size: 13px; color: var(--text2); margin: 0; line-height: 1.6; }
+
+    /* ─── HIGHLIGHT BOX ─── */
+    .highlight-box {
+      background: linear-gradient(135deg, rgba(124,58,237,0.1), rgba(91,33,182,0.07));
+      border: 1px solid var(--border-bright); border-radius: 14px;
+      padding: 20px; margin: 16px 0;
+    }
+    .highlight-box p { margin: 0; font-size: 14px; color: var(--text2); line-height: 1.7; }
+
+    .warn-box {
+      background: rgba(250,204,21,0.05);
+      border: 1px solid rgba(250,204,21,0.2);
+      border-radius: 14px; padding: 20px; margin: 16px 0;
+    }
+    .warn-box p { margin: 0; font-size: 14px; color: var(--text2); line-height: 1.65; }
+
+    /* ─── SECTION CTA ─── */
+    .section-cta {
+      display: flex; align-items: center; justify-content: space-between;
+      background: linear-gradient(135deg, rgba(124,58,237,0.1), rgba(91,33,182,0.08));
+      border: 1px solid var(--border); border-radius: 12px;
+      padding: 14px 18px; margin-top: 28px; gap: 12px;
+    }
+    .section-cta span { font-size: 13px; color: var(--text2); }
+    .section-cta a {
+      background: linear-gradient(135deg, var(--yellow), var(--yellow-dark));
+      color: var(--purple-deep); font-weight: 700; font-size: 12px;
+      padding: 9px 18px; border-radius: 8px; text-decoration: none; white-space: nowrap;
+      transition: box-shadow 0.2s;
+    }
+    .section-cta a:hover { box-shadow: 0 0 16px var(--yellow-glow); }
+
+    /* ─── FAQ ─── */
+    .faq { display: flex; flex-direction: column; gap: 8px; margin-top: 20px; }
+    .faq-item {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 12px; overflow: hidden; transition: border-color 0.2s;
+    }
+    .faq-item.open { border-color: var(--border-bright); }
+    .faq-q {
+      padding: 16px 20px; font-weight: 600; font-size: 14px;
+      cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+      gap: 12px; user-select: none;
+    }
+    .faq-arrow {
+      width: 22px; height: 22px; border-radius: 6px; background: var(--bg3);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; color: var(--yellow);
+      transition: transform 0.2s, background 0.2s; flex-shrink: 0;
+    }
+    .faq-item.open .faq-arrow { transform: rotate(45deg); background: var(--purple); }
+    .faq-a {
+      padding: 0 20px; max-height: 0; overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s;
+      font-size: 13px; color: var(--text2); line-height: 1.65;
+    }
+    .faq-item.open .faq-a { max-height: 300px; padding: 0 20px 18px; }
+
+    /* ─── INTERNAL LINKS ─── */
+    .internal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }
+    .ilink {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 12px; padding: 16px; text-decoration: none;
+      display: flex; align-items: center; gap: 12px;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .ilink:hover { border-color: var(--border-bright); transform: translateY(-1px); }
+    .ilink-icon {
+      font-size: 20px; width: 38px; height: 38px; background: var(--bg3);
+      border-radius: 9px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .ilink-title { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 2px; }
+    .ilink-desc { font-size: 11px; color: var(--text3); }
+
+    /* ─── FOOTER ─── */
+    footer { background: var(--bg2); border-top: 1px solid var(--border); padding: 28px 24px; text-align: center; }
+    footer p { font-size: 12px; color: var(--text3); line-height: 1.9; }
+    footer a { color: var(--yellow); text-decoration: none; }
+
+    /* ─── STICKY BAR ─── */
+    .sticky-bar {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+      background: rgba(8,6,18,0.95); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-top: 1px solid var(--border-bright);
+      padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .sticky-text { font-size: 13px; color: var(--text2); flex: 1; }
+    .sticky-text strong { color: var(--text); display: block; font-size: 14px; }
+    .sticky-btn {
+      background: linear-gradient(135deg, var(--yellow), var(--yellow-dark));
+      color: var(--purple-deep); font-weight: 800; font-size: 13px;
+      padding: 10px 22px; border-radius: 9px;
+      text-decoration: none; white-space: nowrap; flex-shrink: 0;
+      box-shadow: 0 0 16px var(--yellow-glow);
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 520px) {
+      .internal-grid { grid-template-columns: 1fr; }
+      .bonus-card { flex-direction: column; gap: 12px; }
+      .stat-row { gap: 10px; }
+    }
+  </style>
 </head>
 <body>
+
 <!-- Slide Menu Overlay -->
 <div id="menu-overlay" onclick="closeMenu()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index:998; backdrop-filter:blur(4px);"></div>
 
-<!-- Slide Menu Panel -->
+<!-- Slide Menu -->
 <div id="slide-menu" style="position:fixed; top:0; left:-300px; width:280px; height:100vh; background:linear-gradient(180deg,#100D24,#080612); border-right:1px solid rgba(124,58,237,0.3); z-index:999; transition:left 0.3s ease; overflow-y:auto;">
   <div style="padding:20px 24px; border-bottom:1px solid rgba(124,58,237,0.2); display:flex; align-items:center; justify-content:space-between;">
     <a href="/" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
@@ -89,7 +368,7 @@
   <nav style="padding:16px 0;">
     <a href="/" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#F5F3FF; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(124,58,237,0.15)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">🏠</span> Ana Sayfa</a>
     <a href="/betsat-giris/" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#F5F3FF; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(124,58,237,0.15)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">🔑</span> Giriş Rehberi</a>
-    <a href="/betsat-bonus/" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#F5F3FF; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(124,58,237,0.15)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">🎁</span> Bonus Rehberi</a>
+    <a href="/betsat-bonus/" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#FACC15; text-decoration:none; font-size:14px; font-weight:700;" onmouseover="this.style.background='rgba(250,204,21,0.1)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">🎁</span> Bonus Rehberi</a>
     <a href="/betsat-canli-casino/" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#F5F3FF; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(124,58,237,0.15)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">🎰</span> Canlı Casino</a>
     <a href="/betsat-slot/" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#F5F3FF; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(124,58,237,0.15)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">🎮</span> Slot Oyunları</a>
     <a href="/betsat-uygulama/" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#F5F3FF; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(124,58,237,0.15)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">📱</span> Mobil Uygulama</a>
@@ -98,11 +377,12 @@
     <a href="https://betsat1586.com/hub/registration/" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#FACC15; text-decoration:none; font-size:14px; font-weight:700;" onmouseover="this.style.background='rgba(250,204,21,0.1)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">🔗</span> Güncel Adres — betsat1586.com</a>
   </nav>
   <div style="padding:20px 24px; border-top:1px solid rgba(124,58,237,0.2);">
-    <a href="https://betsat1586.com/hub/registration/" target="_blank" rel="noopener" style="display:block; background:linear-gradient(135deg,#FACC15,#EAB308); color:#3B0764; font-weight:800; font-size:14px; padding:14px; border-radius:12px; text-decoration:none; text-align:center;">🎯 Betsat'a Giriş Yap</a>
+    <a href="https://betsat1586.com/hub/registration/" target="_blank" rel="noopener" style="display:block; background:linear-gradient(135deg,#FACC15,#EAB308); color:#3B0764; font-weight:800; font-size:14px; padding:14px; border-radius:12px; text-decoration:none; text-align:center;">🎁 Bonusunu Al</a>
     <p style="margin-top:12px; font-size:11px; color:#6D5FA6; text-align:center;">OGL/2024/815/0653 — Curaçao GCB</p>
   </div>
 </div>
 
+<!-- Header -->
 <header>
   <div style="display:flex; align-items:center; gap:12px;">
     <button onclick="openMenu()" style="background:rgba(124,58,237,0.15); border:1px solid rgba(124,58,237,0.3); border-radius:8px; width:36px; height:36px; color:#A78BFA; font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0;">☰</button>
@@ -112,80 +392,101 @@
 </header>
 
 <!-- Safety Banner -->
-<div style="background:linear-gradient(90deg,#1a0a2e,#2d1054,#1a0a2e); border-bottom:1px solid rgba(250,204,21,0.3); padding:10px 20px; text-align:center; position:sticky; top:60px; z-index:99;">
-  <p style="margin:0; font-size:12px; color:#e9d5ff; line-height:1.5;">
-    ⚠️ <strong style="color:#FACC15;">Dikkat:</strong> Google'da "Betsat giriş" aratarak sahte sitelere düşebilirsiniz. Güvenli erişim için
-    <strong style="color:#FACC15;">bu sayfayı</strong> kullanın,
-    <a href="https://3.127.125.33/" target="_blank" rel="noopener" style="color:#FACC15; font-weight:700; text-decoration:underline;">uygulamayı indirin</a>
-    veya
-    <a href="https://t.me/betsattr" target="_blank" rel="noopener" style="color:#FACC15; font-weight:700; text-decoration:underline;">Telegram kanalımızı</a> takip edin.
-  </p>
+<div class="safety-banner">
+  <p>⚠️ <strong style="color:#FACC15;">Dikkat:</strong> Sahte Betsat sitelerine dikkat edin. Güvenli erişim için <strong style="color:#FACC15;">bu sayfayı</strong> kullanın veya <a href="https://t.me/betsattr" target="_blank" rel="noopener" style="color:#FACC15;font-weight:700;text-decoration:underline;">Telegram kanalımızı</a> takip edin.</p>
 </div>
 
-
+<!-- Hero -->
 <section class="hero">
-  <div class="breadcrumb"><a href="/">Ana Sayfa</a> › Betsat Bonus Rehberi</div>
-  <div style="font-size:11px; color:var(--text3); margin-bottom:16px;">🕒 Son güncelleme: 12 Haziran 2026</div>
-  <h1>Betsat <span>Bonus Rehberi</span> 2026</h1>
-  <p>Hoş geldin bonusu, kayıp bonusu, freespin ve tüm Betsat kampanyaları hakkında kapsamlı rehber.</p>
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="/">Ana Sayfa</a>
+    <span>›</span>
+    <span>Bonus Rehberi</span>
+  </nav>
+
+  <div class="hero-badge">
+    <span class="live-dot"></span>
+    Kampanyalar Aktif — Haziran 2026
+  </div>
+
+  <h1>Betsat <em>Bonus Rehberi</em> 2026</h1>
+
+  <p class="hero-desc">Hoş geldin bonusu, kayıp bonusu, freespin ve tüm Betsat kampanyaları hakkında kapsamlı rehber.</p>
+
+  <div class="stat-row">
+    <div class="stat-chip"><span class="num">5+</span> Bonus Türü</div>
+    <div class="stat-chip">🎁 Hoş Geldin</div>
+    <div class="stat-chip">🔄 Haftalık Kayıp</div>
+    <div class="stat-chip">⭐ VIP Program</div>
+  </div>
+
   <a href="https://betsat1586.com/hub/registration/" target="_blank" rel="noopener" class="btn-primary">🎁 Bonusunu Al — Betsat Giriş</a>
 </section>
 
-<section class="section">
-  <h2 class="section-title">Betsat <span>Bonus Türleri</span></h2>
-  <p>Betsat, yeni ve mevcut üyelerine çeşitli bonus kampanyaları sunmaktadır. Güncel bonus detayları için Betsat'ın promosyonlar sayfasını ziyaret etmenizi öneririz.</p>
+<div class="divider"></div>
 
-  <div class="bonus-cards">
+<!-- Bonus Türleri -->
+<section class="section">
+  <div class="section-eyebrow">Kampanyalar</div>
+  <h2 class="section-title">Betsat <em>Bonus Türleri</em></h2>
+  <p class="section-body">Betsat yeni ve mevcut üyelerine çeşitli bonus kampanyaları sunmaktadır. Güncel detaylar için Betsat'ın promosyonlar sayfasını ziyaret etmenizi öneririz.</p>
+
+  <div class="bonus-list">
     <div class="bonus-card">
       <div class="bonus-icon">🎁</div>
-      <div class="bonus-info">
-        <h3>Hoş Geldin Bonusu</h3>
-        <p>Betsat'a ilk kez üye olan kullanıcılara özel hoş geldin bonusu sunulmaktadır. İlk para yatırma işleminizde aktif hale gelir. Bonus miktarı ve çevrim şartları için Betsat promosyonlar sayfasını inceleyin.</p>
-        <span class="bonus-badge">YENİ ÜYE</span>
+      <div>
+        <div class="bonus-name">Hoş Geldin Bonusu</div>
+        <p class="bonus-desc">Betsat'a ilk kez üye olan kullanıcılara özel hoş geldin bonusu sunulmaktadır. İlk para yatırma işleminizde aktif hale gelir. Bonus miktarı ve çevrim şartları için Betsat promosyonlar sayfasını inceleyin.</p>
+        <span class="bonus-badge new">YENİ ÜYE</span>
       </div>
     </div>
     <div class="bonus-card">
       <div class="bonus-icon">💰</div>
-      <div class="bonus-info">
-        <h3>Yatırım Bonusu</h3>
-        <p>Betsat'ta düzenli yapılan para yatırma işlemleri için haftalık yatırım bonusu kampanyaları düzenlenmektedir. Para yatırma bonusları belirli günlerde veya minimum tutar koşuluyla aktif olabilir.</p>
+      <div>
+        <div class="bonus-name">Yatırım Bonusu</div>
+        <p class="bonus-desc">Betsat'ta düzenli yapılan para yatırma işlemleri için haftalık yatırım bonusu kampanyaları düzenlenmektedir. Belirli günlerde veya minimum tutar koşuluyla aktif olabilir.</p>
         <span class="bonus-badge">HAFTALIK</span>
       </div>
     </div>
     <div class="bonus-card">
       <div class="bonus-icon">🔄</div>
-      <div class="bonus-info">
-        <h3>Kayıp Bonusu</h3>
-        <p>Betsat kayıp bonusu, belirli bir dönemdeki kayıplarınızın bir kısmını geri almanızı sağlar. Kayıp bonusu kampanyaları genellikle haftalık periyotlarla hesaplanır.</p>
+      <div>
+        <div class="bonus-name">Kayıp Bonusu</div>
+        <p class="bonus-desc">Betsat kayıp bonusu, belirli bir dönemdeki kayıplarınızın bir kısmını geri almanızı sağlar. Haftalık periyotlarla hesaplanır.</p>
         <span class="bonus-badge">HAFTALIK</span>
       </div>
     </div>
     <div class="bonus-card">
       <div class="bonus-icon">🎰</div>
-      <div class="bonus-info">
-        <h3>Freespin Kampanyaları</h3>
-        <p>Seçili slot oyunlarında geçerli freespin (bedava döndürme) kampanyaları. Sweet Bonanza, Gates of Olympus gibi popüler slotlarda ücretsiz spin kazanma fırsatı.</p>
+      <div>
+        <div class="bonus-name">Freespin Kampanyaları</div>
+        <p class="bonus-desc">Seçili slot oyunlarında geçerli freespin (bedava döndürme) kampanyaları. Sweet Bonanza, Gates of Olympus gibi popüler slotlarda ücretsiz spin kazanma fırsatı.</p>
         <span class="bonus-badge">SLOT</span>
       </div>
     </div>
     <div class="bonus-card">
       <div class="bonus-icon">👥</div>
-      <div class="bonus-info">
-        <h3>Arkadaş Davet Bonusu</h3>
-        <p>Betsat'a arkadaşını davet et, her başarılı davet için bonus kazan. Davet ettiğin kişi ilk para yatırma işlemini yaptığında ikisi de bonus hak kazanır.</p>
+      <div>
+        <div class="bonus-name">Arkadaş Davet Bonusu</div>
+        <p class="bonus-desc">Betsat'a arkadaşını davet et, her başarılı davet için bonus kazan. Davet ettiğin kişi ilk para yatırma işlemini yaptığında ikisi de bonus hak kazanır.</p>
         <span class="bonus-badge">DAVET</span>
       </div>
     </div>
   </div>
 
-  <div class="section-cta"><span>Betsat güncel adres aktif ✓</span><a href="https://betsat1586.com/hub/registration/" target="_blank" rel="noopener">Bonusunu Al →</a></div>
+  <div class="section-cta">
+    <span>Betsat bonus aktif ✓</span>
+    <a href="https://betsat1586.com/hub/registration/" target="_blank" rel="noopener">Bonusunu Al →</a>
+  </div>
 </section>
 
+<!-- Nasıl Kullanılır -->
 <section class="section">
-  <h2 class="section-title">Bonus <span>Nasıl Kullanılır?</span></h2>
-  <p>Betsat bonuslarından yararlanmak için aşağıdaki adımları takip edin.</p>
+  <div class="section-eyebrow">Adımlar</div>
+  <h2 class="section-title">Bonus <em>Nasıl Kullanılır?</em></h2>
+  <p class="section-body">Betsat bonuslarından yararlanmak için aşağıdaki adımları takip edin.</p>
 
-  <table class="bonus-table">
+  <table class="steps-table">
     <thead><tr><th>Adım</th><th>Açıklama</th></tr></thead>
     <tbody>
       <tr><td>1. Üye ol / giriş yap</td><td>Güncel Betsat adresine gir ve hesabına bağlan</td></tr>
@@ -196,154 +497,233 @@
     </tbody>
   </table>
 
-  <div class="highlight-box" style="margin-top:20px;"><p>⚠️ <strong>Önemli:</strong> Betsat bonuslarında çevrim şartı (rollover) bulunabilir. Bonusu çekmeden önce belirlenen miktarda bahis yapman gerekebilir. Güncel çevrim şartları için Betsat'ın promosyonlar sayfasını incele.</p></div>
-</section>
-
-<section class="section">
-  <h2 class="section-title">Diğer <span>Rehberler</span></h2>
-  <div class="internal-links">
-    <a href="/betsat-giris/" class="ilink"><div class="ilink-icon">🔑</div><div class="ilink-text"><h4>Giriş Rehberi</h4><p>Adım adım giriş ve üyelik</p></div></a>
-    <a href="/betsat-canli-casino/" class="ilink"><div class="ilink-icon">🎰</div><div class="ilink-text"><h4>Canlı Casino</h4><p>Slot ve masa oyunları rehberi</p></div></a>
-    <a href="/betsat-uygulama/" class="ilink"><div class="ilink-icon">📱</div><div class="ilink-text"><h4>Mobil Uygulama</h4><p>iOS ve Android kurulum rehberi</p></div></a>
-    <a href="/" class="ilink"><div class="ilink-icon">🏠</div><div class="ilink-text"><h4>Ana Sayfa</h4><p>Betsat kapsamlı rehberi</p></div></a>
+  <div class="warn-box">
+    <p>⚠️ <strong style="color:var(--yellow)">Önemli:</strong> Betsat bonuslarında çevrim şartı (rollover) bulunabilir. Bonusu çekmeden önce belirlenen miktarda bahis yapman gerekebilir. Güncel şartlar için Betsat'ın promosyonlar sayfasını incele.</p>
   </div>
 </section>
 
-
+<!-- Çevrim Şartları -->
 <section class="section">
-  <h2 class="section-title">Betsat <span>Bonus Çevrim</span> Şartları</h2>
-  <p><strong>Betsat bonusları</strong> genellikle çevrim şartına tabidir. Çevrim şartı, bonusu çekebilmek için belirlenen miktarda bahis yapman gerektiği anlamına gelir. Örneğin 40x çevrim şartı olan 100 TL bonus için toplam 4.000 TL bahis yapman gerekmektedir.</p>
+  <div class="section-eyebrow">Çevrim</div>
+  <h2 class="section-title">Betsat Bonus <em>Çevrim Şartları</em></h2>
+  <p class="section-body">Betsat bonusları genellikle çevrim şartına tabidir. Çevrim şartı, bonusu çekebilmek için belirlenen miktarda bahis yapman gerektiği anlamına gelir.</p>
 
   <div class="highlight-box">
     <p>
-      💡 <strong style="color:var(--bs-yellow)">Çevrim şartını hesaplama:</strong><br><br>
-      Bonus miktarı × Çevrim katsayısı = Toplam bahis yapılması gereken tutar<br><br>
-      Örnek: <strong>500 TL bonus × 40 kat = 20.000 TL bahis</strong><br><br>
-      Güncel çevrim şartları için Betsat'ın promosyonlar sayfasını incelemenizi öneririz.
-    </p>
-  </div>
-
-  <p>Betsat bonus kullanımında dikkat edilmesi gereken diğer noktalar:</p>
-
-  <div class="steps">
-    <div class="step">
-      <div class="step-num">1</div>
-      <div class="step-content">
-        <h3>Bonus geçerlilik süresi</h3>
-        <p>Betsat bonuslarının genellikle bir geçerlilik süresi vardır. Bu süre dolmadan çevrim şartını tamamlamaya çalış. Süre bilgisi bonus detaylarında yer alır.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">2</div>
-      <div class="step-content">
-        <h3>Minimum bahis tutarı</h3>
-        <p><strong>Betsat bonus</strong> çevriminde minimum tek bahis tutarı ve minimum oran şartı olabilir. Genellikle düşük oranlardan yapılan bahisler çevrime sayılmaz.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">3</div>
-      <div class="step-content">
-        <h3>Oyun kısıtlamaları</h3>
-        <p>Bazı Betsat bonusları yalnızca spor bahislerinde ya da yalnızca slot oyunlarında geçerlidir. Bonus detaylarını dikkatli oku.</p>
-      </div>
-    </div>
-  </div>
-  <div class="section-cta"><span>Betsat bonus aktif ✓</span><a href="https://betsat1586.com/hub/registration/" target="_blank" rel="noopener">Bonusunu Al →</a></div>
-</section>
-
-<section class="section">
-  <h2 class="section-title">Betsat <span>VIP Program</span> ve Sadakat Sistemi</h2>
-  <p>Betsat'ın <strong>VIP programı</strong> düzenli oyuncuları ödüllendiren bir sadakat sistemidir. VIP seviyesi arttıkça özel bonuslar, daha yüksek para çekme limitleri ve kişisel hesap yöneticisi gibi ayrıcalıklara kavuşursun.</p>
-  <p><strong>Betsat VIP avantajları:</strong></p>
-  <div class="highlight-box">
-    <p>
-      ⭐ <strong style="color:var(--bs-yellow)">Özel kayıp bonusları</strong> — standart oranların üzerinde<br><br>
-      💰 <strong style="color:var(--bs-yellow)">Yüksek para çekme limitleri</strong> — VIP üyelere özel<br><br>
-      🎁 <strong style="color:var(--bs-yellow)">Doğum günü bonusu</strong> — kişisel hediye<br><br>
-      📞 <strong style="color:var(--bs-yellow)">Öncelikli destek</strong> — 7/24 hızlı yanıt<br><br>
-      🏆 <strong style="color:var(--bs-yellow)">Özel turnuvalar</strong> — VIP üyelere özel etkinlikler
-    </p>
-  </div>
-  <p>VIP programı hakkında detaylı bilgi için Betsat'a giriş yaptıktan sonra hesabın menüsünden VIP bölümünü inceleyebilirsin.</p>
-</section>
-
-<section class="section">
-  <h2 class="section-title">Betsat Bonus <span>İlgili Aramalar</span></h2>
-  <p>
-    <strong>Betsat bonus</strong> arayanlar aynı zamanda şu konulara da ilgi duymaktadır:
-    <strong>betsat hoş geldin bonusu 2026</strong>, <strong>betsat kayıp bonusu</strong>,
-    <strong>betsat yatırım bonusu</strong>, <strong>betsat freespin</strong>,
-    <strong>betsat promosyon kodu</strong>, <strong>betsat çevrim şartı</strong>,
-    <strong>betsat VIP</strong>, <strong>betsat bonus nasıl alınır</strong>,
-    <strong>betsat arkadaş davet bonusu</strong>, <strong>betsat slot bonusu</strong>,
-    <strong>betsat deneme bonusu</strong>, <strong>betsat bonus iptali</strong>.
-    Tüm bonus detayları için <a href="https://betsat1586.com/hub/registration/" target="_blank" rel="noopener" style="color:var(--bs-yellow)">Betsat'ın promosyonlar sayfasını</a> ziyaret edebilirsiniz.
-  </p>
-</section>
-
-
-<section class="section">
-  <h2 class="section-title">Betsat <span>Promosyon Kodu</span> Nedir, Nasıl Kullanılır?</h2>
-  <p>Betsat promosyon kodu, üyelik veya para yatırma sırasında girilen özel bir koddur. Bu kod sayesinde ek bonus, freespin veya özel kampanyalardan yararlanabilirsiniz.</p>
-
-  <div class="steps">
-    <div class="step"><div class="step-num">1</div><div class="step-content"><h3>Üyelik Sırasında Kod Gir</h3><p>Betsat'a ilk kez kayıt olurken kayıt formunda <strong>promosyon kodu</strong> alanını bulun. Geçerli bir kod girerek hoş geldin bonusunu aktive edin.</p></div></div>
-    <div class="step"><div class="step-num">2</div><div class="step-content"><h3>Para Yatırırken Kod Kullan</h3><p>Bazı Betsat kampanyaları para yatırma ekranında promosyon kodu gerektirmektedir. Kodu doğru girmezseniz bonus tanımlanmayabilir.</p></div></div>
-    <div class="step"><div class="step-num">3</div><div class="step-content"><h3>Promosyonlar Sayfasını Kontrol Et</h3><p>Betsat'ın <strong>Promosyonlar</strong> bölümünde aktif kampanyaları ve gerekli kodları görebilirsiniz. Kodlar düzenli olarak güncellenmektedir.</p></div></div>
-  </div>
-
-  <div class="highlight-box">
-    <p>📲 <strong style="color:var(--bs-yellow)">Güncel promosyon kodları için:</strong> Betsat'ın resmi <a href="https://t.me/betsattr" target="_blank" rel="noopener" style="color:var(--bs-yellow)">@betsattr Telegram kanalını</a> takip edin. Özel kampanyalar ve kodlar önce Telegram'da duyurulmaktadır.</p>
-  </div>
-</section>
-
-<section class="section">
-  <h2 class="section-title">Betsat Bonus <span>Çevrim Hesaplama</span> Rehberi</h2>
-  <p><strong>Betsat bonus çevrimi</strong> nasıl hesaplanır? Bonusu çekebilmek için belirlenen miktarda bahis yapmanız gerekmektedir. İşte detaylı hesaplama örnekleri:</p>
-
-  <div class="highlight-box" style="margin-bottom:20px;">
-    <p>
-      📊 <strong style="color:var(--bs-yellow)">Çevrim Hesaplama Formülü:</strong><br><br>
+      📊 <strong style="color:var(--text)">Çevrim Hesaplama Formülü:</strong><br><br>
       <strong>Bonus Miktarı × Çevrim Katsayısı = Yapılması Gereken Bahis</strong><br><br>
-      Örnek 1: <strong>200 TL bonus × 20 kat = 4,000 TL bahis</strong><br>
-      Örnek 2: <strong>500 TL bonus × 30 kat = 15,000 TL bahis</strong><br>
-      Örnek 3: <strong>1,000 TL bonus × 40 kat = 40,000 TL bahis</strong>
+      Örnek 1: <strong style="color:var(--yellow)">200 TL × 20 kat = 4.000 TL bahis</strong><br>
+      Örnek 2: <strong style="color:var(--yellow)">500 TL × 30 kat = 15.000 TL bahis</strong><br>
+      Örnek 3: <strong style="color:var(--yellow)">1.000 TL × 40 kat = 40.000 TL bahis</strong>
     </p>
   </div>
 
-  <p>Çevrim şartlarında dikkat edilmesi gereken önemli noktalar:</p>
-
   <div class="steps">
-    <div class="step"><div class="step-num">✓</div><div class="step-content"><h3>Minimum Oran Şartı</h3><p>Betsat bonus çevriminde genellikle <strong>minimum bahis oranı</strong> şartı bulunur. Düşük oranlı bahisler çevrime sayılmayabilir. Detaylar için Betsat promosyonlar sayfasını inceleyin.</p></div></div>
-    <div class="step"><div class="step-num">✓</div><div class="step-content"><h3>Geçerlilik Süresi</h3><p>Her Betsat bonusunun bir <strong>son kullanma tarihi</strong> vardır. Bu süre dolmadan çevrim şartını tamamlamalısınız. Süre genellikle bonus tanımlandıktan itibaren 7-30 gün arasındadır.</p></div></div>
-    <div class="step"><div class="step-num">✓</div><div class="step-content"><h3>Oyun Kısıtlamaları</h3><p>Bazı bonuslar yalnızca <strong>spor bahislerinde</strong>, bazıları yalnızca <strong>slot oyunlarında</strong> geçerlidir. Bonus türüne göre hangi oyunlarda kullanabileceğinizi kontrol edin.</p></div></div>
-    <div class="step"><div class="step-num">✓</div><div class="step-content"><h3>Para Çekme Limiti</h3><p>Bazı Betsat bonuslarında <strong>maksimum çekim limiti</strong> olabilir. Örneğin bonustan kazanılan tutarın belirli bir katından fazlasını çekemeyebilirsiniz.</p></div></div>
+    <div class="step">
+      <div class="step-num check">✓</div>
+      <div class="step-content">
+        <h3>Minimum Oran Şartı</h3>
+        <p>Betsat bonus çevriminde genellikle minimum bahis oranı şartı bulunur. Düşük oranlı bahisler çevrime sayılmayabilir.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num check">✓</div>
+      <div class="step-content">
+        <h3>Geçerlilik Süresi</h3>
+        <p>Her Betsat bonusunun bir son kullanma tarihi vardır. Genellikle bonus tanımlandıktan itibaren 7-30 gün arasındadır.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num check">✓</div>
+      <div class="step-content">
+        <h3>Oyun Kısıtlamaları</h3>
+        <p>Bazı bonuslar yalnızca spor bahislerinde, bazıları yalnızca slot oyunlarında geçerlidir. Bonus türüne göre hangi oyunlarda kullanabileceğinizi kontrol edin.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num check">✓</div>
+      <div class="step-content">
+        <h3>Para Çekme Limiti</h3>
+        <p>Bazı Betsat bonuslarında maksimum çekim limiti olabilir. Detaylar için bonus koşullarını inceleyin.</p>
+      </div>
+    </div>
   </div>
-  <div class="section-cta"><span>Betsat bonus aktif ✓</span><a href="https://betsat1586.com/hub/registration/" target="_blank" rel="noopener">Bonusunu Al →</a></div>
+
+  <div class="section-cta">
+    <span>Betsat bonus aktif ✓</span>
+    <a href="https://betsat1586.com/hub/registration/" target="_blank" rel="noopener">Bonusunu Al →</a>
+  </div>
 </section>
 
+<!-- Kayıp Bonusu -->
 <section class="section">
-  <h2 class="section-title">Betsat <span>Kayıp Bonusu</span> Detaylı Rehber</h2>
-  <p>Betsat kayıp bonusu, belirli bir dönemde kaybettiğiniz miktarın bir kısmını geri almanızı sağlayan bir kampanya türüdür. Türk oyuncular arasında en çok tercih edilen Betsat bonus türlerinden biridir.</p>
+  <div class="section-eyebrow">Kayıp Bonusu</div>
+  <h2 class="section-title">Betsat <em>Kayıp Bonusu</em> Detaylı Rehber</h2>
+  <p class="section-body">Betsat kayıp bonusu, belirli bir dönemde kaybettiğiniz miktarın bir kısmını geri almanızı sağlayan kampanya türüdür. Türk oyuncular arasında en çok tercih edilen bonus türüdür.</p>
 
   <div class="highlight-box">
     <p>
-      💰 <strong style="color:var(--bs-yellow)">Betsat Kayıp Bonusu Nasıl Çalışır?</strong><br><br>
-      Haftalık kayıp bonusunda, pazartesi 00:00 - pazar 23:59 arasındaki net kayıplarınız hesaplanır. Belirlenen iade oranı kaybınıza uygulanır ve bonus olarak hesabınıza tanımlanır.<br><br>
-      Örnek: <strong>1,000 TL kayıp × %10 iade = 100 TL bonus</strong><br><br>
+      💰 <strong style="color:var(--text)">Betsat Kayıp Bonusu Nasıl Çalışır?</strong><br><br>
+      Haftalık kayıp bonusunda, pazartesi 00:00 - pazar 23:59 arasındaki net kayıplarınız hesaplanır. Belirlenen iade oranı uygulanır ve bonus olarak hesabınıza tanımlanır.<br><br>
+      Örnek: <strong style="color:var(--yellow)">1.000 TL kayıp × %10 iade = 100 TL bonus</strong><br><br>
       Güncel kayıp bonusu oranları için Betsat'ın promosyonlar sayfasını incelemenizi öneririz.
     </p>
   </div>
 </section>
 
-<footer><p>Bu site Betsat platformu hakkında bağımsız bir bilgi ve rehber kaynağıdır.<br>Betsat resmi adresi: <a href="https://betsat1586.com/hub/registration/" target="_blank" rel="noopener">betsat1586.com</a> | Telegram: <a href="https://t.me/betsattr" target="_blank" rel="noopener">@betsattr</a><br><small style="opacity:0.5;">© 2026 bahiskazani.com</small></p></footer>
+<!-- VIP Program -->
+<section class="section">
+  <div class="section-eyebrow">VIP Program</div>
+  <h2 class="section-title">Betsat <em>VIP Program</em> ve Sadakat Sistemi</h2>
+  <p class="section-body">Betsat'ın VIP programı düzenli oyuncuları ödüllendiren bir sadakat sistemidir. VIP seviyesi arttıkça özel bonuslar ve ayrıcalıklara kavuşursun.</p>
 
+  <div class="highlight-box">
+    <p>
+      ⭐ <strong style="color:var(--text)">Özel kayıp bonusları</strong> — standart oranların üzerinde<br><br>
+      💰 <strong style="color:var(--text)">Yüksek para çekme limitleri</strong> — VIP üyelere özel<br><br>
+      🎁 <strong style="color:var(--text)">Doğum günü bonusu</strong> — kişisel hediye<br><br>
+      📞 <strong style="color:var(--text)">Öncelikli destek</strong> — 7/24 hızlı yanıt<br><br>
+      🏆 <strong style="color:var(--text)">Özel turnuvalar</strong> — VIP üyelere özel etkinlikler
+    </p>
+  </div>
+</section>
+
+<!-- Promosyon Kodu -->
+<section class="section">
+  <div class="section-eyebrow">Promosyon Kodu</div>
+  <h2 class="section-title">Betsat <em>Promosyon Kodu</em> Nasıl Kullanılır?</h2>
+  <p class="section-body">Betsat promosyon kodu, üyelik veya para yatırma sırasında girilen özel bir koddur. Bu kod sayesinde ek bonus, freespin veya özel kampanyalardan yararlanabilirsiniz.</p>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h3>Üyelik Sırasında Kod Gir</h3>
+        <p>Betsat'a ilk kez kayıt olurken kayıt formunda promosyon kodu alanını bulun. Geçerli bir kod girerek hoş geldin bonusunu aktive edin.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h3>Para Yatırırken Kod Kullan</h3>
+        <p>Bazı Betsat kampanyaları para yatırma ekranında promosyon kodu gerektirmektedir. Kodu doğru girmezseniz bonus tanımlanmayabilir.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h3>Promosyonlar Sayfasını Kontrol Et</h3>
+        <p>Betsat'ın Promosyonlar bölümünde aktif kampanyaları ve gerekli kodları görebilirsiniz. Kodlar düzenli olarak güncellenmektedir.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <p>📲 <strong style="color:var(--text)">Güncel promosyon kodları için:</strong> Betsat'ın resmi <a href="https://t.me/betsattr" target="_blank" rel="noopener" style="color:var(--yellow)">@betsattr Telegram kanalını</a> takip edin. Özel kampanyalar ve kodlar önce Telegram'da duyurulmaktadır.</p>
+  </div>
+
+  <div class="section-cta">
+    <span>Kampanyalar aktif ✓</span>
+    <a href="https://betsat1586.com/hub/registration/" target="_blank" rel="noopener">Bonusunu Al →</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="section-eyebrow">SSS</div>
+  <h2 class="section-title">Sık Sorulan <em>Sorular</em></h2>
+
+  <div class="faq">
+    <div class="faq-item">
+      <div class="faq-q">Betsat hoş geldin bonusu nasıl alınır?<span class="faq-arrow">+</span></div>
+      <div class="faq-a">Betsat'a ilk kez üye olduktan sonra ilk para yatırma işleminizde hoş geldin bonusu otomatik olarak aktive olur. Güncel detaylar için Betsat promosyonlar sayfasını inceleyin.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Betsat kayıp bonusu nedir?<span class="faq-arrow">+</span></div>
+      <div class="faq-a">Belirli bir dönemdeki kayıplarınızın belirli bir oranının geri ödenmesidir. Genellikle haftalık periyotlarla hesaplanır ve pazartesi hesabınıza tanımlanır.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Betsat bonus çevrim şartı nedir?<span class="faq-arrow">+</span></div>
+      <div class="faq-a">Çevrim şartı, bonusu çekmeden önce yapmanız gereken bahis miktarıdır. Bonus miktarı ile çevrim katsayısının çarpımı kadar bahis yapmanız gerekir.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Betsat promosyon kodu nerede kullanılır?<span class="faq-arrow">+</span></div>
+      <div class="faq-a">Betsat promosyon kodu üyelik sırasında kayıt formunda veya para yatırma ekranında ilgili alana girilir. Güncel kodlar için <a href="https://t.me/betsattr" target="_blank" rel="noopener" style="color:var(--yellow)">@betsattr</a> Telegram kanalını takip edin.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Betsat freespin nasıl kazanılır?<span class="faq-arrow">+</span></div>
+      <div class="faq-a">Betsat freespin kampanyaları genellikle belirli bir yatırım yapıldığında veya özel dönemlerde aktif olur. Güncel kampanyaları Betsat'ın Promosyonlar bölümünden takip edebilirsiniz.</div>
+    </div>
+  </div>
+</section>
+
+<!-- İlgili Aramalar -->
+<section class="section">
+  <div class="section-eyebrow">İlgili Aramalar</div>
+  <h2 class="section-title">Betsat Bonus <em>İlgili Konular</em></h2>
+  <p class="section-body">
+    <strong>Betsat bonus</strong> arayanlar aynı zamanda şu konulara da ilgi duymaktadır:
+    <strong>betsat hoş geldin bonusu 2026</strong>, <strong>betsat kayıp bonusu</strong>,
+    <strong>betsat yatırım bonusu</strong>, <strong>betsat freespin</strong>,
+    <strong>betsat promosyon kodu</strong>, <strong>betsat çevrim şartı</strong>,
+    <strong>betsat VIP</strong>, <strong>betsat bonus nasıl alınır</strong>,
+    <strong>betsat arkadaş davet bonusu</strong>, <strong>betsat slot bonusu</strong>.
+    Tüm bonus detayları için <a href="https://betsat1586.com/hub/registration/" target="_blank" rel="noopener" style="color:var(--yellow)">Betsat'ın promosyonlar sayfasını</a> ziyaret edebilirsiniz.
+  </p>
+</section>
+
+<!-- İç Linkler -->
+<section class="section">
+  <div class="section-eyebrow">Diğer Rehberler</div>
+  <h2 class="section-title">Betsat <em>Rehberleri</em></h2>
+  <div class="internal-grid">
+    <a href="/betsat-giris/" class="ilink">
+      <div class="ilink-icon">🔑</div>
+      <div><div class="ilink-title">Giriş Rehberi</div><div class="ilink-desc">Adım adım giriş ve üyelik</div></div>
+    </a>
+    <a href="/betsat-canli-casino/" class="ilink">
+      <div class="ilink-icon">🎰</div>
+      <div><div class="ilink-title">Canlı Casino</div><div class="ilink-desc">Rulet, blackjack, baccarat</div></div>
+    </a>
+    <a href="/betsat-slot/" class="ilink">
+      <div class="ilink-icon">🎮</div>
+      <div><div class="ilink-title">Slot Oyunları</div><div class="ilink-desc">EGT çanlar, Sweet Bonanza</div></div>
+    </a>
+    <a href="/betsat-uygulama/" class="ilink">
+      <div class="ilink-icon">📱</div>
+      <div><div class="ilink-title">Mobil Uygulama</div><div class="ilink-desc">iOS ve Android kurulum</div></div>
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>
+    Bu site Betsat platformu hakkında bağımsız bir bilgi ve rehber kaynağıdır.<br>
+    Betsat resmi adresi: <a href="https://betsat1586.com/hub/registration/" target="_blank" rel="noopener">betsat1586.com</a> &nbsp;|&nbsp; Telegram: <a href="https://t.me/betsattr" target="_blank" rel="noopener">@betsattr</a><br>
+    <small style="opacity:0.4;">© 2026 bahiskazani.com — Son güncelleme: 16 Haziran 2026</small>
+  </p>
+</footer>
+
+<!-- Sticky Bar -->
 <div class="sticky-bar">
-  <div class="sticky-bar-text"><strong>🎁 Betsat Bonus</strong>Hemen al, bahis yap</div>
-  <a href="https://betsat1586.com/hub/registration/" target="_blank" rel="noopener" class="sticky-bar-btn">Giriş Yap →</a>
+  <div class="sticky-text">
+    <strong>🎁 Betsat Bonus</strong>
+    Hemen al, bahis yap
+  </div>
+  <a href="https://betsat1586.com/hub/registration/" target="_blank" rel="noopener" class="sticky-btn">Giriş Yap →</a>
 </div>
 
 <script>
+  document.querySelectorAll(".faq-q").forEach(q => {
+    q.addEventListener("click", () => {
+      const item = q.parentElement;
+      const isOpen = item.classList.contains("open");
+      document.querySelectorAll(".faq-item").forEach(i => i.classList.remove("open"));
+      if (!isOpen) item.classList.add("open");
+    });
+  });
+
   function openMenu() {
     document.getElementById('slide-menu').style.left = '0';
     document.getElementById('menu-overlay').style.display = 'block';
@@ -354,7 +734,8 @@
     document.getElementById('menu-overlay').style.display = 'none';
     document.body.style.overflow = '';
   }
-  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeMenu(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 </script>
+
 </body>
 </html>
