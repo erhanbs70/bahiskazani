@@ -9,17 +9,14 @@
   <link rel="canonical" href="https://bahiskazani.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Betsat'a neden erişemiyorum?","acceptedAnswer":{"@type":"Answer","text":"Betsat, BTK tarafından zaman zaman engellenebilmektedir. Bu sayfadaki güncel giriş adresini veya Telegram kanalını (@betsattr) kullanarak Betsat'a erişebilirsiniz."}},{"@type":"Question","name":"Betsat güvenilir bir site mi?","acceptedAnswer":{"@type":"Answer","text":"Betsat, Curaçao Oyun Kontrol Kurulu tarafından verilen OGL/2024/815/0653 numaralı lisans ile faaliyet göstermektedir."}},{"@type":"Question","name":"Betsat mobil uygulaması var mı?","acceptedAnswer":{"@type":"Answer","text":"Evet, Betsat'ın mobil uygulaması mevcuttur. iOS ve Android cihazlara indirilebilir."}},{"@type":"Question","name":"Betsat Telegram kanalı var mı?","acceptedAnswer":{"@type":"Answer","text":"Evet, @betsattr Telegram kanalından güncel adres bilgilerine ulaşabilirsiniz."}}]}
   </script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebSite","name":"Bahis Kazanı — Betsat Rehberi","url":"https://bahiskazani.com","description":"Betsat güncel giriş adresi, bonus ve rehber sitesi"}
   </script>
-
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --purple: #7C3AED;
       --purple-dark: #5B21B6;
@@ -38,9 +35,7 @@
       --border-bright: rgba(124,58,237,0.5);
       --glow: rgba(124,58,237,0.15);
     }
-
     html { scroll-behavior: smooth; }
-
     body {
       font-family: "Inter", sans-serif;
       background: var(--bg);
@@ -50,8 +45,6 @@
       padding-bottom: 76px;
       overflow-x: hidden;
     }
-
-    /* ─── BG GRADIENT ─── */
     body::before {
       content: "";
       position: fixed;
@@ -62,10 +55,7 @@
       pointer-events: none;
       z-index: 0;
     }
-
     * { position: relative; z-index: 1; }
-
-    /* ─── HEADER ─── */
     header {
       background: rgba(8,6,18,0.85);
       backdrop-filter: blur(16px);
@@ -80,14 +70,12 @@
       top: 0;
       z-index: 100;
     }
-
     .logo {
       display: flex;
       align-items: center;
       gap: 10px;
       text-decoration: none;
     }
-
     .logo-badge {
       width: 34px;
       height: 34px;
@@ -101,16 +89,13 @@
       color: var(--purple-deep);
       box-shadow: 0 0 12px var(--yellow-glow);
     }
-
     .logo-text {
       font-size: 18px;
       font-weight: 800;
       color: var(--text);
       letter-spacing: -0.5px;
     }
-
     .logo-text span { color: var(--yellow); }
-
     .header-btn {
       background: linear-gradient(135deg, var(--yellow), var(--yellow-dark));
       color: var(--purple-deep);
@@ -122,20 +107,16 @@
       transition: box-shadow 0.2s, transform 0.15s;
       box-shadow: 0 0 0 0 var(--yellow-glow);
     }
-
     .header-btn:hover {
       box-shadow: 0 0 20px var(--yellow-glow);
       transform: translateY(-1px);
     }
-
-    /* ─── HERO ─── */
     .hero {
       padding: 80px 24px 60px;
       text-align: center;
       max-width: 680px;
       margin: 0 auto;
     }
-
     .hero-badge {
       display: inline-flex;
       align-items: center;
@@ -150,7 +131,6 @@
       margin-bottom: 28px;
       letter-spacing: 0.3px;
     }
-
     .live-dot {
       width: 7px;
       height: 7px;
@@ -160,9 +140,7 @@
       animation: pulse 2s infinite;
       flex-shrink: 0;
     }
-
     @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.85)} }
-
     .hero h1 {
       font-size: clamp(32px, 7vw, 56px);
       font-weight: 900;
@@ -170,7 +148,6 @@
       letter-spacing: -2px;
       margin-bottom: 20px;
     }
-
     .hero h1 .line2 {
       display: block;
       background: linear-gradient(90deg, var(--yellow), #FDE68A, var(--yellow));
@@ -178,7 +155,6 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
-
     .hero p {
       font-size: 16px;
       color: var(--text2);
@@ -188,14 +164,12 @@
       margin-right: auto;
       line-height: 1.65;
     }
-
     .cta-group {
       display: flex;
       flex-direction: column;
       gap: 12px;
       align-items: center;
     }
-
     .btn-primary {
       display: inline-flex;
       align-items: center;
@@ -214,12 +188,10 @@
       box-shadow: 0 4px 24px rgba(250,204,21,0.2);
       letter-spacing: -0.3px;
     }
-
     .btn-primary:hover {
       box-shadow: 0 6px 32px rgba(250,204,21,0.35);
       transform: translateY(-2px);
     }
-
     .btn-tg {
       display: inline-flex;
       align-items: center;
@@ -237,12 +209,10 @@
       transition: box-shadow 0.2s, transform 0.15s;
       box-shadow: 0 4px 16px rgba(34,158,217,0.2);
     }
-
     .btn-tg:hover {
       box-shadow: 0 6px 24px rgba(34,158,217,0.35);
       transform: translateY(-2px);
     }
-
     .btn-ghost {
       display: inline-flex;
       align-items: center;
@@ -259,13 +229,10 @@
       max-width: 380px;
       transition: border-color 0.2s, color 0.2s;
     }
-
     .btn-ghost:hover {
       border-color: var(--border-bright);
       color: var(--text2);
     }
-
-    /* ─── STATS ─── */
     .stats {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -274,7 +241,6 @@
       margin: 52px auto 0;
       padding: 0 24px;
     }
-
     .stat {
       background: var(--bg2);
       border: 1px solid var(--border);
@@ -283,12 +249,10 @@
       text-align: center;
       transition: border-color 0.2s, box-shadow 0.2s;
     }
-
     .stat:hover {
       border-color: var(--border-bright);
       box-shadow: 0 0 20px var(--glow);
     }
-
     .stat-value {
       font-size: 26px;
       font-weight: 900;
@@ -296,7 +260,6 @@
       display: block;
       letter-spacing: -1px;
     }
-
     .stat-label {
       font-size: 11px;
       color: var(--text3);
@@ -305,8 +268,6 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-
-    /* ─── CHANNEL BAR ─── */
     .channel-bar {
       max-width: 680px;
       margin: 20px auto 0;
@@ -315,7 +276,6 @@
       gap: 10px;
       flex-wrap: wrap;
     }
-
     .channel-btn {
       display: inline-flex;
       align-items: center;
@@ -328,20 +288,15 @@
       transition: opacity 0.2s, transform 0.15s;
       letter-spacing: 0.1px;
     }
-
     .channel-btn:hover { opacity: 0.85; transform: translateY(-1px); }
     .channel-btn.tg { background: rgba(34,158,217,0.15); border: 1px solid rgba(34,158,217,0.3); color: #60CAEE; }
     .channel-btn.app { background: var(--bg2); border: 1px solid var(--border); color: var(--text2); }
-
-    /* ─── DIVIDER ─── */
     .divider {
       height: 1px;
       background: linear-gradient(90deg, transparent, var(--border), transparent);
       max-width: 680px;
       margin: 48px auto;
     }
-
-    /* ─── NAV GRID ─── */
     .nav-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -350,7 +305,6 @@
       margin: 24px auto 0;
       padding: 0 24px;
     }
-
     .nav-card {
       background: var(--bg2);
       border: 1px solid var(--border);
@@ -362,13 +316,11 @@
       gap: 14px;
       transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
     }
-
     .nav-card:hover {
       border-color: var(--border-bright);
       box-shadow: 0 0 24px var(--glow);
       transform: translateY(-2px);
     }
-
     .nav-card-icon {
       font-size: 26px;
       flex-shrink: 0;
@@ -380,27 +332,22 @@
       align-items: center;
       justify-content: center;
     }
-
     .nav-card-text h4 {
       font-size: 14px;
       font-weight: 700;
       color: var(--text);
       margin-bottom: 2px;
     }
-
     .nav-card-text p {
       font-size: 12px;
       color: var(--text3);
       margin: 0;
     }
-
-    /* ─── SECTIONS ─── */
     .section {
       max-width: 680px;
       margin: 0 auto 56px;
       padding: 0 24px;
     }
-
     .section-label {
       font-size: 11px;
       font-weight: 700;
@@ -409,7 +356,6 @@
       text-transform: uppercase;
       margin-bottom: 8px;
     }
-
     .section-title {
       font-size: 24px;
       font-weight: 800;
@@ -417,17 +363,13 @@
       color: var(--text);
       letter-spacing: -0.5px;
     }
-
     .section-title span { color: var(--yellow); }
-
     .section p {
       color: var(--text2);
       font-size: 15px;
       margin-bottom: 14px;
       line-height: 1.65;
     }
-
-    /* ─── NOTICE ─── */
     .notice {
       background: rgba(124,58,237,0.08);
       border: 1px solid var(--border);
@@ -441,10 +383,7 @@
       align-items: flex-start;
       line-height: 1.55;
     }
-
     .notice-icon { flex-shrink: 0; font-size: 15px; }
-
-    /* ─── TOC ─── */
     .toc {
       background: var(--bg2);
       border: 1px solid var(--border);
@@ -452,7 +391,6 @@
       padding: 20px 24px;
       margin-bottom: 40px;
     }
-
     .toc h3 {
       font-size: 12px;
       font-weight: 700;
@@ -461,22 +399,16 @@
       letter-spacing: 1px;
       margin-bottom: 14px;
     }
-
     .toc ol { padding-left: 18px; }
-
     .toc li {
       font-size: 13px;
       color: var(--text2);
       margin-bottom: 7px;
       line-height: 1.4;
     }
-
     .toc a { color: var(--text2); text-decoration: none; transition: color 0.2s; }
     .toc a:hover { color: var(--yellow); }
-
-    /* ─── STEPS ─── */
     .steps { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
-
     .step {
       display: flex;
       gap: 16px;
@@ -487,9 +419,7 @@
       padding: 20px;
       transition: border-color 0.2s;
     }
-
     .step:hover { border-color: var(--border-bright); }
-
     .step-num {
       min-width: 34px;
       height: 34px;
@@ -504,18 +434,14 @@
       box-shadow: 0 0 12px rgba(124,58,237,0.3);
       flex-shrink: 0;
     }
-
     .step-content h3 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
     .step-content p { font-size: 13px; color: var(--text2); margin: 0; line-height: 1.5; }
-
-    /* ─── CARDS ─── */
     .cards {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 12px;
       margin-top: 24px;
     }
-
     .card {
       background: var(--bg2);
       border: 1px solid var(--border);
@@ -523,27 +449,21 @@
       padding: 22px;
       transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
     }
-
     .card:hover {
       border-color: var(--border-bright);
       box-shadow: 0 0 20px var(--glow);
       transform: translateY(-2px);
     }
-
     .card-icon { font-size: 26px; margin-bottom: 12px; display: block; }
     .card-title { font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
     .card-desc { font-size: 12px; color: var(--text2); line-height: 1.55; }
     .card-link { font-size: 11px; color: var(--yellow); margin-top: 10px; display: block; font-weight: 600; }
-
-    /* ─── BONUS TABLE ─── */
     .bonus-table { width: 100%; border-collapse: collapse; margin-top: 24px; font-size: 14px; border-radius: 12px; overflow: hidden; }
     .bonus-table th { background: linear-gradient(135deg, var(--purple-dark), var(--purple)); color: var(--yellow); padding: 13px 16px; text-align: left; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
     .bonus-table td { padding: 13px 16px; border-bottom: 1px solid var(--border); color: var(--text2); font-size: 13px; }
     .bonus-table tr:last-child td { border-bottom: none; }
     .bonus-table tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
     .bonus-table tr:hover td { background: var(--bg3); }
-
-    /* ─── PAYMENT GRID ─── */
     .payment-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 24px; }
     .payment-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 14px; padding: 20px; display: flex; gap: 14px; align-items: flex-start; transition: border-color 0.2s; }
     .payment-card:hover { border-color: var(--border-bright); }
@@ -551,16 +471,12 @@
     .payment-info h4 { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
     .payment-info p { font-size: 12px; color: var(--text2); margin: 0; line-height: 1.5; }
     .badge-green { display: inline-block; background: rgba(34,197,94,0.12); color: #4ADE80; border: 1px solid rgba(34,197,94,0.25); border-radius: 5px; font-size: 10px; font-weight: 700; padding: 2px 7px; margin-left: 6px; }
-
-    /* ─── SPORT LIST ─── */
     .sport-list { display: flex; flex-direction: column; gap: 10px; margin-top: 24px; }
     .sport-item { display: flex; align-items: center; gap: 14px; background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 15px 18px; transition: border-color 0.2s; }
     .sport-item:hover { border-color: var(--border-bright); }
     .sport-emoji { font-size: 22px; width: 36px; text-align: center; flex-shrink: 0; }
     .sport-info h4 { font-size: 14px; font-weight: 700; margin-bottom: 2px; }
     .sport-info p { font-size: 12px; color: var(--text2); margin: 0; }
-
-    /* ─── HIGHLIGHT ─── */
     .highlight-box {
       background: linear-gradient(135deg, rgba(124,58,237,0.1), rgba(91,33,182,0.08));
       border: 1px solid var(--border-bright);
@@ -568,10 +484,7 @@
       padding: 20px;
       margin: 20px 0;
     }
-
     .highlight-box p { margin: 0; font-size: 14px; color: var(--text2); line-height: 1.6; }
-
-    /* ─── SECTION CTA ─── */
     .section-cta {
       display: flex;
       align-items: center;
@@ -583,9 +496,7 @@
       margin-top: 28px;
       gap: 12px;
     }
-
     .section-cta span { font-size: 13px; color: var(--text2); }
-
     .section-cta a {
       background: linear-gradient(135deg, var(--yellow), var(--yellow-dark));
       color: var(--purple-deep);
@@ -597,10 +508,7 @@
       white-space: nowrap;
       transition: box-shadow 0.2s;
     }
-
     .section-cta a:hover { box-shadow: 0 0 16px var(--yellow-glow); }
-
-    /* ─── CTA BOTTOM ─── */
     .cta-bottom {
       background: linear-gradient(135deg, var(--purple-deep), var(--purple-dark));
       border: 1px solid var(--border-bright);
@@ -612,14 +520,10 @@
       width: calc(100% - 48px);
       box-shadow: 0 0 60px rgba(124,58,237,0.15);
     }
-
     .cta-bottom h2 { font-size: 24px; font-weight: 800; margin-bottom: 10px; letter-spacing: -0.5px; }
     .cta-bottom p { color: var(--text2); font-size: 14px; margin-bottom: 28px; }
     .cta-bottom-btns { display: flex; flex-direction: column; gap: 10px; align-items: center; }
-
-    /* ─── FAQ ─── */
     .faq { display: flex; flex-direction: column; gap: 8px; margin-top: 24px; }
-
     .faq-item {
       background: var(--bg2);
       border: 1px solid var(--border);
@@ -627,9 +531,7 @@
       overflow: hidden;
       transition: border-color 0.2s;
     }
-
     .faq-item.open { border-color: var(--border-bright); }
-
     .faq-q {
       padding: 17px 20px;
       font-weight: 600;
@@ -641,7 +543,6 @@
       user-select: none;
       gap: 12px;
     }
-
     .faq-arrow {
       width: 22px;
       height: 22px;
@@ -655,9 +556,7 @@
       transition: transform 0.2s, background 0.2s;
       flex-shrink: 0;
     }
-
     .faq-item.open .faq-arrow { transform: rotate(45deg); background: var(--purple); }
-
     .faq-a {
       padding: 0 20px;
       max-height: 0;
@@ -667,21 +566,15 @@
       color: var(--text2);
       line-height: 1.65;
     }
-
     .faq-item.open .faq-a { max-height: 300px; padding: 0 20px 18px; }
-
-    /* ─── FOOTER ─── */
     footer {
       background: var(--bg2);
       border-top: 1px solid var(--border);
       padding: 28px 24px;
       text-align: center;
     }
-
     footer p { font-size: 12px; color: var(--text3); line-height: 1.9; }
     footer a { color: var(--yellow); text-decoration: none; }
-
-    /* ─── STICKY BAR ─── */
     .sticky-bar {
       position: fixed;
       bottom: 0;
@@ -698,10 +591,8 @@
       justify-content: space-between;
       gap: 12px;
     }
-
     .sticky-bar-text { font-size: 13px; color: var(--text2); flex: 1; }
     .sticky-bar-text strong { color: var(--text); display: block; font-size: 14px; font-weight: 700; }
-
     .sticky-bar-btn {
       background: linear-gradient(135deg, var(--yellow), var(--yellow-dark));
       color: var(--purple-deep);
@@ -715,10 +606,7 @@
       box-shadow: 0 0 16px var(--yellow-glow);
       transition: box-shadow 0.2s;
     }
-
     .sticky-bar-btn:hover { box-shadow: 0 0 24px rgba(250,204,21,0.4); }
-
-    /* ─── RESPONSIVE ─── */
     @media (max-width: 520px) {
       .cards { grid-template-columns: 1fr; }
       .payment-grid { grid-template-columns: 1fr; }
@@ -730,30 +618,24 @@
       .hero { padding: 60px 20px 48px; }
     }
   </style>
-  <!-- OG Tags -->
   <meta property="og:title" content="Betsat Giriş 2026 | Güncel Betsat Adresi ve Rehber">
   <meta property="og:description" content="Betsat 2026 güncel giriş adresi. Bonus, spor bahisleri, canlı casino ve ödeme yöntemleri rehberi.">
   <meta property="og:url" content="https://bahiskazani.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Bahis Kazanı">
-  <meta name="article:modified_time" content="2026-06-16">
-  <!-- BreadcrumbList Schema -->
+  <meta name="article:modified_time" content="2026-07-03">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ana Sayfa","item":"https://bahiskazani.com/"}]}
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Organization","name":"Poligon Entertainment N.V.","url":"https://bahiskazani.com","description":"Betsat casino platformunun resmi rehber sitesi","license":"OGL/2024/815/0653","sameAs":["https://t.me/betsattr","https://betsat1589.com"]}
+  {"@context":"https://schema.org","@type":"Organization","name":"Poligon Entertainment N.V.","url":"https://bahiskazani.com","description":"Betsat casino platformunun resmi rehber sitesi","license":"OGL/2024/815/0653","sameAs":["https://t.me/betsattr","https://betsat1599.com"]}
   </script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebSite","name":"Bahis Kazanı","url":"https://bahiskazani.com","inLanguage":"tr","potentialAction":{"@type":"SearchAction","target":"https://bahiskazani.com/?s={search_term_string}","query-input":"required name=search_term_string"}}
   </script>
 </head>
 <body>
-
-<!-- Slide Menu Overlay -->
 <div id="menu-overlay" onclick="closeMenu()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index:998; backdrop-filter:blur(4px);"></div>
-
-<!-- Slide Menu Panel -->
 <div id="slide-menu" style="position:fixed; top:0; left:-300px; width:280px; height:100vh; background:linear-gradient(180deg,#100D24,#080612); border-right:1px solid rgba(124,58,237,0.3); z-index:999; transition:left 0.3s ease; overflow-y:auto;">
   <div style="padding:20px 24px; border-bottom:1px solid rgba(124,58,237,0.2); display:flex; align-items:center; justify-content:space-between;">
     <a href="/" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
@@ -771,23 +653,20 @@
     <a href="/betsat-uygulama/" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#F5F3FF; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(124,58,237,0.15)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">📱</span> Mobil Uygulama</a>
     <div style="height:1px; background:linear-gradient(90deg,transparent,rgba(124,58,237,0.4),transparent); margin:12px 24px;"></div>
     <a href="https://t.me/betsattr" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#60CAEE; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(34,158,217,0.1)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">📲</span> Telegram — @betsattr</a>
-    <a href="https://betsat1589.com/hub/registration/" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#FACC15; text-decoration:none; font-size:14px; font-weight:700;" onmouseover="this.style.background='rgba(250,204,21,0.1)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">🔗</span> Güncel Adres — betsat1589.com</a>
+    <a href="https://betsat1599.com/hub/registration/" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#FACC15; text-decoration:none; font-size:14px; font-weight:700;" onmouseover="this.style.background='rgba(250,204,21,0.1)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">🔗</span> Güncel Adres — betsat1599.com</a>
   </nav>
   <div style="padding:20px 24px; border-top:1px solid rgba(124,58,237,0.2);">
-    <a href="https://betsat1589.com/hub/registration/" target="_blank" rel="noopener" style="display:block; background:linear-gradient(135deg,#FACC15,#EAB308); color:#3B0764; font-weight:800; font-size:14px; padding:14px; border-radius:12px; text-decoration:none; text-align:center;">🎯 Betsat'a Giriş Yap</a>
+    <a href="https://betsat1599.com/hub/registration/" target="_blank" rel="noopener" style="display:block; background:linear-gradient(135deg,#FACC15,#EAB308); color:#3B0764; font-weight:800; font-size:14px; padding:14px; border-radius:12px; text-decoration:none; text-align:center;">🎯 Betsat'a Giriş Yap</a>
     <p style="margin-top:12px; font-size:11px; color:#6D5FA6; text-align:center;">OGL/2024/815/0653 — Curaçao GCB</p>
   </div>
 </div>
-
 <header>
   <div style="display:flex; align-items:center; gap:12px;">
     <button onclick="openMenu()" style="background:rgba(124,58,237,0.15); border:1px solid rgba(124,58,237,0.3); border-radius:8px; width:36px; height:36px; color:#A78BFA; font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0;">☰</button>
     <a href="/" class="logo"><div class="logo-badge">BS</div><span class="logo-text">Bet<span>sat</span></span></a>
   </div>
-  <a href="https://betsat1589.com/hub/registration/" target="_blank" rel="noopener" class="header-btn">Giriş Yap →</a>
+  <a href="https://betsat1599.com/hub/registration/" target="_blank" rel="noopener" class="header-btn">Giriş Yap →</a>
 </header>
-
-<!-- Safety Banner -->
 <div style="background:linear-gradient(90deg,#1a0a2e,#2d1054,#1a0a2e); border-bottom:1px solid rgba(250,204,21,0.3); padding:10px 20px; text-align:center; position:sticky; top:60px; z-index:99;">
   <p style="margin:0; font-size:12px; color:#e9d5ff; line-height:1.5;">
     ⚠️ <strong style="color:#FACC15;">Dikkat:</strong> Google'da "Betsat giriş" aratarak sahte sitelere düşebilirsiniz. Güvenli erişim için
@@ -797,12 +676,10 @@
     <a href="https://t.me/betsattr" target="_blank" rel="noopener" style="color:#FACC15; font-weight:700; text-decoration:underline;">Telegram kanalımızı</a> takip edin.
   </p>
 </div>
-
-
 <section class="hero">
   <div class="hero-badge">
     <span class="live-dot"></span>
-    betsat1589 — Haziran 2026 Güncel
+    betsat1599 — Haziran 2026 Güncel
   </div>
   <h1>
     Betsat Giriş Adresi
@@ -810,9 +687,7 @@
   </h1>
   <p><strong>Betsat güncel giriş adresi</strong>, bonus fırsatları, spor bahisleri ve ödeme yöntemleri hakkında ihtiyacınız olan her şey bu sayfada.</p>
   <div class="cta-group">
-    <a href="https://betsat1589.com/hub/registration/" target="_blank" rel="noopener" class="btn-primary">🎯 Betsat Güncel Giriş</a>
-
-    <!-- Mobil Uygulama -->
+    <a href="https://betsat1599.com/hub/registration/" target="_blank" rel="noopener" class="btn-primary">🎯 Betsat Güncel Giriş</a>
     <a href="https://3.127.125.33/" target="_blank" rel="noopener noreferrer" style="text-decoration:none; background:linear-gradient(135deg,#FFD600,#FFAB00); border-radius:14px; padding:14px 20px; display:flex; align-items:center; justify-content:center; gap:16px; box-shadow:0 10px 20px rgba(0,0,0,0.3); width:100%; max-width:380px; position:relative;">
       <div style="display:flex; gap:6px; padding-right:12px; border-right:1px solid rgba(75,0,130,0.25); align-items:center;">
         <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Apple_logo_white.svg" alt="Apple" style="height:20px; filter:invert(12%) sepia(95%) saturate(3500%) hue-rotate(265deg) brightness(65%) contrast(120%);">
@@ -824,8 +699,6 @@
       </div>
       <div style="position:absolute; right:20px; font-size:18px; color:rgba(75,0,130,1); font-weight:800;">›</div>
     </a>
-
-    <!-- Telegram -->
     <a href="https://t.me/betsattr" target="_blank" rel="noopener noreferrer" style="text-decoration:none; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2); border-radius:14px; padding:14px 20px; display:flex; align-items:center; justify-content:center; gap:16px; box-shadow:0 8px 15px rgba(0,0,0,0.25); width:100%; max-width:380px; position:relative;">
       <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" style="width:28px; height:28px; filter:drop-shadow(0 2px 4px rgba(0,0,0,0.3)); flex-shrink:0;">
       <div style="text-align:center;">
@@ -834,19 +707,15 @@
       </div>
       <div style="position:absolute; right:20px; font-size:18px; color:#FFD600; font-weight:800;">›</div>
     </a>
-
     <a href="#icerik" class="btn-ghost">Detaylı Rehberi Oku ↓</a>
   </div>
 </section>
-
 <div class="stats">
   <div class="stat"><span class="stat-value">7/24</span><span class="stat-label">Canlı Destek</span></div>
   <div class="stat"><span class="stat-value">500+</span><span class="stat-label">Slot Oyunu</span></div>
   <div class="stat"><span class="stat-value">Anında</span><span class="stat-label">Ödeme</span></div>
 </div>
-
 <div style="max-width:680px; margin:20px auto 0; padding:0 24px; display:flex; flex-direction:column; gap:10px; align-items:center;">
-  <!-- Mobil Uygulama -->
   <a href="https://3.127.125.33/" target="_blank" rel="noopener noreferrer" style="text-decoration:none; background:linear-gradient(135deg,#FFD600,#FFAB00); border-radius:14px; padding:14px 20px; display:flex; align-items:center; justify-content:center; gap:16px; box-shadow:0 10px 20px rgba(0,0,0,0.3); width:100%; max-width:480px; position:relative;">
     <div style="display:flex; gap:6px; padding-right:12px; border-right:1px solid rgba(75,0,130,0.25); align-items:center;">
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Apple_logo_white.svg" alt="Apple" style="height:20px; filter:invert(12%) sepia(95%) saturate(3500%) hue-rotate(265deg) brightness(65%) contrast(120%);">
@@ -858,8 +727,6 @@
     </div>
     <div style="position:absolute; right:20px; font-size:18px; color:rgba(75,0,130,1); font-weight:800;">›</div>
   </a>
-
-  <!-- Telegram -->
   <a href="https://t.me/betsattr" target="_blank" rel="noopener noreferrer" style="text-decoration:none; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2); border-radius:14px; padding:14px 20px; display:flex; align-items:center; justify-content:center; gap:16px; box-shadow:0 8px 15px rgba(0,0,0,0.25); width:100%; max-width:480px; position:relative;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" style="width:28px; height:28px; filter:drop-shadow(0 2px 4px rgba(0,0,0,0.3)); flex-shrink:0;">
     <div style="text-align:center;">
@@ -869,7 +736,6 @@
     <div style="position:absolute; right:20px; font-size:18px; color:#FFD600; font-weight:800;">›</div>
   </a>
 </div>
-
 <div class="nav-grid" style="margin-top:32px;">
   <a href="/betsat-giris/" class="nav-card">
     <div class="nav-card-icon">🔑</div>
@@ -892,11 +758,9 @@
     <div class="nav-card-text"><h4>Mobil Uygulama</h4><p>iOS ve Android indirme rehberi</p></div>
   </a>
 </div>
-
 <div class="divider"></div>
-
 <div style="max-width:680px; margin:0 auto 12px; padding:0 24px; text-align:right;">
-  <span style="font-size:11px; color:var(--text3);">🕒 Son güncelleme: 19 Haziran 2026</span>
+  <span style="font-size:11px; color:var(--text3);">🕒 Son güncelleme: 03 Temmuz 2026</span>
 </div>
 <div class="section" id="icerik">
   <div class="notice">
@@ -917,7 +781,6 @@
     </ol>
   </div>
 </div>
-
 <section class="section" id="giris-rehberi">
   <div class="section-label">Rehber</div>
   <h2 class="section-title"><span>Betsat Giriş</span> Nasıl Yapılır?</h2>
@@ -956,11 +819,10 @@
     <p>💡 <strong style="color:var(--text)">Önemli not:</strong> Betsat'a erişim sorunu yaşıyorsanız <a href="/betsat-uygulama/" style="color:var(--yellow)">mobil uygulamayı</a> kullanmayı deneyin. VPN kullanmadan da güncel adres üzerinden erişebilirsiniz.</p>
   </div>
   <div class="highlight-box" style="background:linear-gradient(135deg,rgba(250,204,21,0.08),rgba(234,179,8,0.05)); border:1px solid rgba(250,204,21,0.3);">
-    <p>🔗 <strong style="color:var(--yellow)">Betsat Haziran 2026 Güncel Adres:</strong> Betsat'ın şu anki aktif giriş adresi <strong style="color:var(--yellow)">betsat1589.com</strong>'dur. BTK engeli nedeniyle adres değişikliklerini <a href="https://t.me/betsattr" target="_blank" rel="noopener" style="color:var(--yellow)">@betsattr Telegram kanalından</a> takip edebilirsiniz. Son güncelleme: <strong style="color:var(--yellow)">16 Haziran 2026</strong>.</p>
+    <p>🔗 <strong style="color:var(--yellow)">Betsat Haziran 2026 Güncel Adres:</strong> Betsat'ın şu anki aktif giriş adresi <strong style="color:var(--yellow)">betsat1599.com</strong>'dur. BTK engeli nedeniyle adres değişikliklerini <a href="https://t.me/betsattr" target="_blank" rel="noopener" style="color:var(--yellow)">@betsattr Telegram kanalından</a> takip edebilirsiniz. Son güncelleme: <strong style="color:var(--yellow)">03 Temmuz 2026</strong>.</p>
   </div>
-  <div class="section-cta"><span>Betsat güncel adres aktif ✓</span><a href="https://betsat1589.com/hub/registration/" target="_blank" rel="noopener">Betsat'a Giriş Yap →</a></div>
+  <div class="section-cta"><span>Betsat güncel adres aktif ✓</span><a href="https://betsat1599.com/hub/registration/" target="_blank" rel="noopener">Betsat'a Giriş Yap →</a></div>
 </section>
-
 <section class="section" id="ozellikler">
   <div class="section-label">Platform</div>
   <h2 class="section-title">Betsat'ın <span>Öne Çıkan</span> Özellikleri</h2>
@@ -974,7 +836,6 @@
     <div class="card"><span class="card-icon">🎁</span><div class="card-title">Düzenli Bonuslar</div><div class="card-desc">Hoş geldin bonusu, kayıp bonusu, yatırım bonusu ve freespin kampanyaları.</div><a href="/betsat-bonus/" class="card-link">Bonus rehberi →</a></div>
   </div>
 </section>
-
 <section class="section" id="bonus">
   <div class="section-label">Kampanyalar</div>
   <h2 class="section-title">Betsat <span>Bonus</span> ve Kampanyalar</h2>
@@ -990,7 +851,6 @@
     </tbody>
   </table>
 </section>
-
 <section class="section" id="spor">
   <div class="section-label">Spor Bahisleri</div>
   <h2 class="section-title">Betsat <span>Spor Bahisleri</span></h2>
@@ -1002,9 +862,8 @@
     <div class="sport-item"><div class="sport-emoji">🏐</div><div class="sport-info"><h4>Voleybol</h4><p>CEV Şampiyonlar Ligi ve Türkiye Voleybol Ligi.</p></div></div>
     <div class="sport-item"><div class="sport-emoji">🎮</div><div class="sport-info"><h4>E-Spor</h4><p>CS:GO, Dota 2, League of Legends ve Valorant. Canlı e-spor bahisleri.</p></div></div>
   </div>
-  <div class="section-cta"><span>Betsat güncel adres aktif ✓</span><a href="https://betsat1589.com/hub/registration/" target="_blank" rel="noopener">Betsat'a Giriş Yap →</a></div>
+  <div class="section-cta"><span>Betsat güncel adres aktif ✓</span><a href="https://betsat1599.com/hub/registration/" target="_blank" rel="noopener">Betsat'a Giriş Yap →</a></div>
 </section>
-
 <section class="section" id="casino">
   <div class="section-label">Casino</div>
   <h2 class="section-title">Betsat <span>Canlı Casino</span> ve Slot</h2>
@@ -1015,9 +874,8 @@
     <div class="card"><span class="card-icon">🀄</span><div class="card-title">Baccarat</div><div class="card-desc">Mini ve Speed Baccarat. Hızlı tempo, yüksek potansiyel.</div></div>
     <div class="card"><span class="card-icon">🎲</span><div class="card-title">Game Shows</div><div class="card-desc">Crazy Time, Dream Catcher, Monopoly Live.</div></div>
   </div>
-  <div class="section-cta"><span>Betsat güncel adres aktif ✓</span><a href="https://betsat1589.com/hub/registration/" target="_blank" rel="noopener">Casino'ya Giriş Yap →</a></div>
+  <div class="section-cta"><span>Betsat güncel adres aktif ✓</span><a href="https://betsat1599.com/hub/registration/" target="_blank" rel="noopener">Casino'ya Giriş Yap →</a></div>
 </section>
-
 <section class="section" id="odeme">
   <div class="section-label">Ödeme</div>
   <h2 class="section-title">Betsat <span>Para Yatırma</span> ve Çekme</h2>
@@ -1029,7 +887,6 @@
     <div class="payment-card"><div class="payment-icon">💳</div><div class="payment-info"><h4>Diğer Yöntemler</h4><p>Mefete, Payfix ve diğer çözümler.</p></div></div>
   </div>
 </section>
-
 <section class="section" id="uygulama">
   <div class="section-label">Mobil</div>
   <h2 class="section-title">Betsat <span>Mobil Uygulama</span></h2>
@@ -1039,13 +896,11 @@
   </div>
   <div class="section-cta"><span>Uygulama aktif ✓</span><a href="/betsat-uygulama/">Kurulum Rehberi →</a></div>
 </section>
-
 <div class="cta-bottom">
   <h2>Betsat'a Hemen Giriş Yap</h2>
   <p>Güncel adres aktif — spor bahisleri, canlı casino ve 500+ slot oyunu sizi bekliyor.</p>
   <div class="cta-bottom-btns">
-    <a href="https://betsat1589.com/hub/registration/" target="_blank" rel="noopener" class="btn-primary" style="max-width:300px;">🎯 Betsat Güncel Giriş</a>
-
+    <a href="https://betsat1599.com/hub/registration/" target="_blank" rel="noopener" class="btn-primary" style="max-width:300px;">🎯 Betsat Güncel Giriş</a>
     <a href="https://3.127.125.33/" target="_blank" rel="noopener noreferrer" style="text-decoration:none; background:linear-gradient(135deg,#FFD600,#FFAB00); border-radius:14px; padding:14px 20px; display:flex; align-items:center; justify-content:center; gap:16px; box-shadow:0 10px 20px rgba(0,0,0,0.3); width:100%; max-width:300px; position:relative;">
       <div style="display:flex; gap:6px; padding-right:12px; border-right:1px solid rgba(75,0,130,0.25); align-items:center;">
         <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Apple_logo_white.svg" alt="Apple" style="height:18px; filter:invert(12%) sepia(95%) saturate(3500%) hue-rotate(265deg) brightness(65%) contrast(120%);">
@@ -1057,7 +912,6 @@
       </div>
       <div style="position:absolute; right:20px; font-size:18px; color:rgba(75,0,130,1); font-weight:800;">›</div>
     </a>
-
     <a href="https://t.me/betsattr" target="_blank" rel="noopener noreferrer" style="text-decoration:none; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2); border-radius:14px; padding:14px 20px; display:flex; align-items:center; justify-content:center; gap:16px; box-shadow:0 8px 15px rgba(0,0,0,0.25); width:100%; max-width:300px; position:relative;">
       <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" style="width:26px; height:26px; flex-shrink:0;">
       <div style="text-align:center;">
@@ -1068,7 +922,6 @@
     </a>
   </div>
 </div>
-
 <section class="section" id="sss">
   <div class="section-label">SSS</div>
   <h2 class="section-title">Sık Sorulan <span>Sorular</span></h2>
@@ -1082,13 +935,10 @@
     <div class="faq-item"><div class="faq-q">Betsat bonusları nasıl kullanılır?<span class="faq-arrow">+</span></div><div class="faq-a">Bonus kampanyalarına katılmak için hesabınıza giriş yapın ve Promosyonlar bölümünü inceleyin. Detaylar için <a href="/betsat-bonus/" style="color:var(--yellow)">bonus rehberimizi</a> okuyun.</div></div>
   </div>
 </section>
-
-
 <section class="section" id="populer-oyunlar">
   <div class="section-label">Popüler Kategoriler</div>
   <h2 class="section-title">Betsat'ta <span>Popüler Oyunlar</span></h2>
   <p>Betsat casino bölümünde EGT Digital, Amatic ve Pragmatic Play gibi sağlayıcılardan yüzlerce oyun bulunmaktadır. Türk oyuncuların en çok tercih ettiği kategoriler şunlardır:</p>
-
   <div class="cards">
     <div class="card">
       <span class="card-icon">🔔</span>
@@ -1114,8 +964,6 @@
     </div>
   </div>
 </section>
-
-
 <section class="section">
   <div class="section-label">İlgili Aramalar</div>
   <h2 class="section-title">Betsat <span>İlgili Konular</span></h2>
@@ -1129,23 +977,20 @@
     Tüm bu konular için ilgili rehber sayfalarımızı ziyaret edebilirsiniz.
   </p>
 </section>
-
 <footer>
   <p>
     Bu site Betsat platformu hakkında bağımsız bir bilgi ve rehber kaynağıdır.<br>
-    Betsat resmi adresi: <a href="https://betsat1589.com/hub/registration/" target="_blank" rel="noopener">betsat1589.com</a> &nbsp;|&nbsp; Telegram: <a href="https://t.me/betsattr" target="_blank" rel="noopener">@betsattr</a><br>
+    Betsat resmi adresi: <a href="https://betsat1599.com/hub/registration/" target="_blank" rel="noopener">betsat1599.com</a> &nbsp;|&nbsp; Telegram: <a href="https://t.me/betsattr" target="_blank" rel="noopener">@betsattr</a><br>
     <small style="opacity:0.4;">© 2026 bahiskazani.com — Tüm hakları saklıdır. Bu site kumar oynamayı teşvik etmez.</small>
   </p>
 </footer>
-
 <div class="sticky-bar">
   <div class="sticky-bar-text">
     <strong>⚡ Betsat Güncel Adres</strong>
     Hemen giriş yap, bonus kazan
   </div>
-  <a href="https://betsat1589.com/hub/registration/" target="_blank" rel="noopener" class="sticky-bar-btn">Giriş Yap →</a>
+  <a href="https://betsat1599.com/hub/registration/" target="_blank" rel="noopener" class="sticky-bar-btn">Giriş Yap →</a>
 </div>
-
 <script>
   document.querySelectorAll(".faq-q").forEach(q => {
     q.addEventListener("click", () => {
@@ -1156,7 +1001,6 @@
     });
   });
 </script>
-
 <script>
   function openMenu() {
     document.getElementById('slide-menu').style.left = '0';
