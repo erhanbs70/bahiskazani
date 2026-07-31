@@ -139,6 +139,7 @@
     <a href="/betsat-canli-casino/" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#F5F3FF; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(124,58,237,0.15)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">🎰</span> Canlı Casino</a>
     <a href="/betsat-slot/" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#FACC15; text-decoration:none; font-size:14px; font-weight:700;" onmouseover="this.style.background='rgba(250,204,21,0.1)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">🎮</span> Slot Oyunları</a>
     <a href="/betsat-uygulama/" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#F5F3FF; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(124,58,237,0.15)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">📱</span> Mobil Uygulama</a>
+    <a href="/hakkimizda/" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#F5F3FF; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(124,58,237,0.15)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">ℹ️</span> Hakkımızda</a>
     <div style="height:1px; background:linear-gradient(90deg,transparent,rgba(124,58,237,0.4),transparent); margin:12px 24px;"></div>
     <a href="https://t.me/betsattr" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#60CAEE; text-decoration:none; font-size:14px; font-weight:600;" onmouseover="this.style.background='rgba(34,158,217,0.1)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">📲</span> Telegram — @betsattr</a>
     <a href="https://betsat1610.com/hub/registration/" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:14px; padding:14px 24px; color:#FACC15; text-decoration:none; font-size:14px; font-weight:700;" onmouseover="this.style.background='rgba(250,204,21,0.1)'" onmouseout="this.style.background='transparent'"><span style="font-size:18px;">🔗</span> Güncel Adres — betsat1610.com</a>
@@ -147,6 +148,9 @@
     <a href="https://betsat1610.com/hub/registration/" target="_blank" rel="noopener" style="display:block; background:linear-gradient(135deg,#FACC15,#EAB308); color:#3B0764; font-weight:800; font-size:14px; padding:14px; border-radius:12px; text-decoration:none; text-align:center;">🎰 Slot Oynamaya Başla</a>
     <p style="margin-top:12px; font-size:11px; color:#8B7CC7; text-align:center;">OGL/2024/815/0653 — Curaçao GCB</p>
   </div>
+</div>
+<div style="background:var(--bg2); border-bottom:1px solid var(--border); padding:6px 24px; text-align:left;">
+  <span id="liveClock" style="font-size:11px; color:var(--text3); font-weight:600; letter-spacing:0.2px;">🕒 --:-- — -- ---- ----</span>
 </div>
 <header>
   <div style="display:flex; align-items:center; gap:12px;">
@@ -508,6 +512,22 @@
     document.body.style.overflow = '';
   }
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+</script>
+<script>
+(function() {
+  var months = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"];
+  function updateLiveClock() {
+    var el = document.getElementById("liveClock");
+    if (!el) return;
+    var now = new Date();
+    var hh = String(now.getHours()).padStart(2, "0");
+    var mm = String(now.getMinutes()).padStart(2, "0");
+    var dd = String(now.getDate()).padStart(2, "0");
+    el.textContent = "🕒 " + hh + ":" + mm + " — " + dd + " " + months[now.getMonth()] + " " + now.getFullYear();
+  }
+  updateLiveClock();
+  setInterval(updateLiveClock, 1000);
+})();
 </script>
 </body>
 </html>
