@@ -155,6 +155,7 @@
     <a href="/betsat-canli-casino/" class="menu-link"><span style="font-size:18px;">🎰</span> Canlı Casino</a>
     <a href="/betsat-slot/" class="menu-link"><span style="font-size:18px;">🎮</span> Slot Oyunları</a>
     <a href="/betsat-uygulama/" class="menu-link"><span style="font-size:18px;">📱</span> Mobil Uygulama</a>
+    <a href="/hakkimizda/" class="menu-link"><span style="font-size:18px;">ℹ️</span> Hakkımızda</a>
     <div class="menu-divider"></div>
     <a href="https://t.me/betsattr" target="_blank" rel="noopener" class="menu-link tg"><span style="font-size:18px;">📲</span> Telegram — @betsattr</a>
     <a href="https://betsat1610.com/hub/registration/" target="_blank" rel="noopener" class="menu-link main"><span style="font-size:18px;">🔗</span> Güncel Adres — betsat1610.com</a>
@@ -163,6 +164,9 @@
     <a href="https://betsat1610.com/hub/registration/" target="_blank" rel="noopener" class="menu-cta">🎯 Betsat'a Giriş Yap</a>
     <p style="margin-top:12px;font-size:11px;color:#8B7CC7;text-align:center;">OGL/2024/815/0653 — Curaçao GCB</p>
   </div>
+</div>
+<div style="background:var(--bg2); border-bottom:1px solid var(--border); padding:6px 24px; text-align:left;">
+  <span id="liveClock" style="font-size:11px; color:var(--text3); font-weight:600; letter-spacing:0.2px;">🕒 --:-- — -- ---- ----</span>
 </div>
 <header>
   <div style="display:flex;align-items:center;gap:12px;">
@@ -410,6 +414,22 @@
     document.body.style.overflow = '';
   }
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+</script>
+<script>
+(function() {
+  var months = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"];
+  function updateLiveClock() {
+    var el = document.getElementById("liveClock");
+    if (!el) return;
+    var now = new Date();
+    var hh = String(now.getHours()).padStart(2, "0");
+    var mm = String(now.getMinutes()).padStart(2, "0");
+    var dd = String(now.getDate()).padStart(2, "0");
+    el.textContent = "🕒 " + hh + ":" + mm + " — " + dd + " " + months[now.getMonth()] + " " + now.getFullYear();
+  }
+  updateLiveClock();
+  setInterval(updateLiveClock, 1000);
+})();
 </script>
 </body>
 </html>
