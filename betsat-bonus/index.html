@@ -332,6 +332,9 @@
     <p style="margin-top:12px; font-size:11px; color:#8B7CC7; text-align:center;">OGL/2024/815/0653 — Curaçao GCB</p>
   </div>
 </div>
+<div style="background:var(--bg2); border-bottom:1px solid var(--border); padding:6px 24px; text-align:left;">
+  <span id="liveClock" style="font-size:11px; color:var(--text3); font-weight:600; letter-spacing:0.2px;">🕒 --:-- — -- ---- ----</span>
+</div>
 <header>
   <div style="display:flex; align-items:center; gap:12px;">
     <button onclick="openMenu()" style="background:rgba(124,58,237,0.15); border:1px solid rgba(124,58,237,0.3); border-radius:8px; width:36px; height:36px; color:#A78BFA; font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0;">☰</button>
@@ -626,6 +629,22 @@
     document.body.style.overflow = '';
   }
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+</script>
+<script>
+(function() {
+  var months = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"];
+  function updateLiveClock() {
+    var el = document.getElementById("liveClock");
+    if (!el) return;
+    var now = new Date();
+    var hh = String(now.getHours()).padStart(2, "0");
+    var mm = String(now.getMinutes()).padStart(2, "0");
+    var dd = String(now.getDate()).padStart(2, "0");
+    el.textContent = "🕒 " + hh + ":" + mm + " — " + dd + " " + months[now.getMonth()] + " " + now.getFullYear();
+  }
+  updateLiveClock();
+  setInterval(updateLiveClock, 1000);
+})();
 </script>
 </body>
 </html>
