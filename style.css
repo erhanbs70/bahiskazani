@@ -226,3 +226,19 @@ a.card:hover{border-color:rgba(250,204,21,.55);transform:translateY(-3px);backgr
 .grid-5{grid-template-columns:repeat(5,1fr)}
 @media (max-width:980px){.grid-5{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:560px){.grid-5{grid-template-columns:1fr}}
+
+/* alt sayfalar */
+h1{max-width:22ch}
+.hero .chips{margin-bottom:22px}
+.steps{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card ul.list{margin:12px 0 0 18px;color:var(--muted);font-size:14px}
+.card .sub{margin-top:2px}
+.row{align-items:flex-start}
+.row>div{min-width:0}
+.row p+.tag{margin:8px 0 0}
+.note+.note{margin-top:12px}
+.sec-head+.note{margin-top:0}
+.grid+.note,.rows+.note,.steps+.note,.table-wrap+.note{margin-top:18px}
+.sec .actions{margin-top:22px}
+.i-check{--m:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23000%22 stroke-width=%222.5%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22m5 12 5 5L20 7%22/%3E%3C/svg%3E")}
+.note+.rows,.note+.grid,.note+.steps{margin-top:14px}
