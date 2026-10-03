@@ -24,3 +24,10 @@
     document.body.classList.toggle("scrolled", !e[0].isIntersecting && e[0].boundingClientRect.top < 0);
   }).observe(first);
 })();
+
+// Giriş linki tıklamalarını konumuna göre ölç (Google Analytics bağlıysa)
+document.addEventListener("click", function (e) {
+  var a = e.target.closest && e.target.closest("a[data-cta]");
+  if (!a || typeof window.gtag !== "function") return;
+  window.gtag("event", "giris_tiklama", { konum: a.getAttribute("data-cta"), sayfa: location.pathname, transport_type: "beacon" });
+});
