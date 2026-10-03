@@ -15,3 +15,12 @@
   tick();
   setInterval(tick, 1000);
 })();
+
+// Sayfadaki ilk giriş butonu ekrandan çıkınca üst barda giriş butonunu göster
+(function () {
+  var first = document.querySelector("main .btn-go");
+  if (!first || !("IntersectionObserver" in window)) return;
+  new IntersectionObserver(function (e) {
+    document.body.classList.toggle("scrolled", !e[0].isIntersecting && e[0].boundingClientRect.top < 0);
+  }).observe(first);
+})();
