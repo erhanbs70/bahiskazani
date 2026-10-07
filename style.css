@@ -290,3 +290,5 @@ img.brand-mark{width:40px;height:40px;border-radius:0;background:none;filter:dro
 .hero-art .kazan{transition:filter .35s}
 .hero-split:has(.btn-go:hover) .kazan{filter:brightness(1.12) drop-shadow(0 22px 45px rgba(124,58,237,.45)) drop-shadow(0 0 46px rgba(250,204,21,.6))}
 @media (max-width:560px){.verified{margin-left:0}}
+.table-wrap{overflow-x:auto}
+@media (max-width:560px){.table th,.table td{padding:11px 10px;font-size:13px}}
