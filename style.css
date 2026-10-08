@@ -61,6 +61,7 @@ img,svg{max-width:100%;display:block}
 .crumb a:hover{color:var(--yellow)}
 h1{font-family:var(--display);font-weight:700;font-size:clamp(26px,4vw,44px);line-height:1.12;letter-spacing:-1px;margin-bottom:14px;max-width:18ch}
 .lead{font-size:17px;color:var(--muted);max-width:58ch;margin-bottom:28px}
+.lead strong{color:var(--text,#fff);font-weight:800}
 .actions{display:flex;flex-wrap:wrap;gap:10px}
 
 /* bento */
